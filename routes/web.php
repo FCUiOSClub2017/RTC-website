@@ -18,3 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::domain('{account}.ahkui.com')->group(function () {
+    Route::get('user/{id?}', function ($account, $id) {
+        dd($account, $id);
+    });
+});

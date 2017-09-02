@@ -19,11 +19,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-    Route::get('user/{id?}', function ($id) {
-        dd($id,"");
-    });
 Route::domain('club.www.ahkui.com')->group(function () {
     Route::get('user/{id?}', function ($id) {
         dd($id);
     });
-});
+});    Route::get('user/{id?}', function ($id) {
+        dd($id,"");
+    });

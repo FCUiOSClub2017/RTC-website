@@ -9,8 +9,10 @@ window._ = require('lodash');
 
 try {
     window.$ = window.jQuery = require('jquery');
-
-    require('bootstrap-sass');
+    window.Popper = require('../../../node_modules/popper.js/dist/umd/popper.js');
+    require('bootstrap');
+    require('jquery.easing');
+    require('./jqBootstrapValidation.js');
 } catch (e) {}
 
 /**
@@ -36,6 +38,7 @@ if (token) {
 } else {
     console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
+
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening

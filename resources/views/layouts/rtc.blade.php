@@ -9,6 +9,12 @@
     @yield('content') 
 @endsection 
 @section('hidden-content') 
+<div class="scroll-top d-lg-none">
+    <a class="btn btn-primary js-scroll-trigger" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+</div>
+
     @yield('hidden-content')
 <script>
 function Load_with_axios($this) {

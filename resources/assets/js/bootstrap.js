@@ -1,4 +1,3 @@
-
 window._ = require('lodash');
 
 /**
@@ -7,13 +6,28 @@ window._ = require('lodash');
  * code may be modified to fit the specific needs of your application.
  */
 
-try {
-    window.$ = window.jQuery = require('jquery');
+if (window.jQuery) {
     window.Popper = require('../../../node_modules/popper.js/dist/umd/popper.js');
     require('bootstrap');
-    require('jquery.easing');
+    require('../../../node_modules/jquery.easing/jquery.easing.1.3.js');
     require('./jqBootstrapValidation.js');
-} catch (e) {}
+    // require('../../../node_modules/jquery.stellar/jquery.stellar.js');
+    // window.Stellar = require('./guardian/jquery.stellar.min');
+    require('./guardian/jquery.waypoints.min.js');
+    require('./guardian/hoverIntent.js');
+    require('./guardian/superfish.js');
+    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: (target.offset().top - 48)
+            }, 1000, "easeInOutExpo");
+            return false;
+        }
+    });
+}
+
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -54,6 +68,3 @@ if (token) {
 //     broadcaster: 'pusher',
 //     key: 'your-pusher-key'
 // });
-
-window.RTC = require('./rtc');
-require('./rtc/freelancer');

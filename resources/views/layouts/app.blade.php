@@ -26,8 +26,8 @@
     <!-- Hidden -->
     @yield('hidden-content')
     <!-- Bootstrap core JavaScript -->
-    <script src="{{asset('js/app.js')}}"></script>
     @stack('scripts')
+    <script src="{{asset('js/app.js')}}"></script>
     @yield('addon-script')
 </body>
 

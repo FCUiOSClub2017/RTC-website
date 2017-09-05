@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300);/*!
+/*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
 
@@ -7614,7 +7614,6 @@ Copyright (c) 2015 Daniel Eden
 * ======================================================= */
 
 body {
-  font-family: "Source Sans Pro", Arial, sans-serif;
   line-height: 1.8;
   font-size: 16px;
   background: #fff;
@@ -7644,7 +7643,6 @@ ol {
   margin-bottom: 1.5em;
   font-size: 20px;
   color: #848484;
-  font-family: "Source Sans Pro", Arial, sans-serif;
 }
 
 h1,
@@ -7654,7 +7652,6 @@ h4,
 h5,
 h6 {
   color: #5a5a5a;
-  font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 30px 0;
 }
@@ -7926,17 +7923,24 @@ figure {
   width: 100%;
   z-index: 2;
   padding: 1.5rem 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-#fh5co-header-section #fh5co-logo {
+#fh5co-header-section #fh5co-logo div {
+  display: inline;
   -webkit-transform: scale(1.35);
           transform: scale(1.35);
   -webkit-transform-origin: left center;
           transform-origin: left center;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 @media screen and (max-width: 768px) {
-  #fh5co-header-section #fh5co-logo {
+  #fh5co-header-section #fh5co-logo div {
     -webkit-transform-origin: center center;
             transform-origin: center center;
   }
@@ -7946,13 +7950,21 @@ figure {
   line-height: 59px;
 }
 
+#fh5co-header-section #fh5co-logo img {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  height: 68px;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
 #fh5co-header-section.navbar-shrink {
-  background-color: dimgrey;
+  background-color: #494949;
   padding-top: 0;
   padding-bottom: 0;
 }
 
-#fh5co-header-section.navbar-shrink #fh5co-logo {
+#fh5co-header-section.navbar-shrink #fh5co-logo div {
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transform-origin: left center;
@@ -7960,10 +7972,16 @@ figure {
 }
 
 @media screen and (max-width: 768px) {
-  #fh5co-header-section.navbar-shrink #fh5co-logo {
+  #fh5co-header-section.navbar-shrink #fh5co-logo div {
     -webkit-transform-origin: center center;
             transform-origin: center center;
   }
+}
+
+#fh5co-header-section.navbar-shrink #fh5co-logo img {
+  height: 54px;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .nav-header {
@@ -8148,7 +8166,7 @@ figure {
 #fh5co-content-section,
 #fh5co-work-section_2,
 #fh5co-blog-section {
-  padding: 7em 0;
+  padding: 4em 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -8157,7 +8175,7 @@ figure {
   #fh5co-content-section,
   #fh5co-work-section_2,
   #fh5co-blog-section {
-    padding: 4em 0;
+    padding: 2.5em 0;
   }
 }
 
@@ -8379,7 +8397,7 @@ figure {
 .fh5co-testimonial {
   position: relative;
   background: #fff;
-  padding: 4em 0;
+  padding: 4em 0.8rem;
   border-radius: 5px;
   -webkit-box-shadow: 0px 18px 88px -22px rgba(0, 0, 0, 0.58);
   box-shadow: 0px 18px 88px -22px rgba(0, 0, 0, 0.58);

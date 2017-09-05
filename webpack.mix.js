@@ -15,3 +15,5 @@ mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
 mix.js('resources/assets/js/rtc.js', 'public/js')
    .sass('resources/assets/sass/rtc.scss', 'public/css');
+mix.js('resources/assets/js/iosclub.js', 'public/js')
+   .sass('resources/assets/sass/iosclub.scss', 'public/css');

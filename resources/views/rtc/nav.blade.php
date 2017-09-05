@@ -70,6 +70,10 @@
                         <a class="dropdown-item" onclick="Load_with_axios(this)" href="#contact" data-href="{{route('rtc.contact')}}">Contact</a>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('iosclub.home')}}">Ios Club</a>
+                </li>
+
             </ul>
         </div>
     </div>

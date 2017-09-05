@@ -13,6 +13,7 @@ if (window.jQuery) {
     require('./jqBootstrapValidation.js');
     // require('../../../node_modules/jquery.stellar/jquery.stellar.js');
     // window.Stellar = require('./guardian/jquery.stellar.min');
+    window.Stellar = require('jquery.stellar/jquery.stellar');
     require('./guardian/jquery.waypoints.min.js');
     require('./guardian/hoverIntent.js');
     require('./guardian/superfish.js');

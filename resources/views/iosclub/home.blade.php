@@ -487,7 +487,7 @@
     <script src="{{asset('js/iosclub.js')}}"></script>
     <script src="{{asset('js/app.js')}}"></script>
     
-    <script src="js/jquery.stellar.min.js"></script> 
+    {{-- <script src="js/jquery.stellar.min.js"></script>  --}}
     <script>
     CLUB.run()
     $.stellar();

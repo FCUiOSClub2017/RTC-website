@@ -12,13 +12,14 @@
   "devDependencies": {
     "axios": "^0.16.2",
     "bootstrap": "4.0.0-beta",
+    "cross-env": "^5.0.1",
     "font-awesome": "^4.7.0",
     "jquery": "*",
-    "cross-env": "^5.0.1",
+    "jquery.easing": "*",
+    "jquery.stellar": "^0.6.2",
     "laravel-mix": "^1.0",
     "lodash": "^4.17.4",
-    "vue": "^2.1.10",
     "popper.js": "*",
-    "jquery.easing":"*"
+    "vue": "^2.1.10"
   }
 }

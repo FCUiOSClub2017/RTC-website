@@ -1,9 +1,9 @@
 @extends('layouts.app') 
 @section('nav') 
-    @include('components.rtc.nav') 
+    @include('rtc.nav') 
 @endsection 
 @section('footer') 
-    @include('components.rtc.footer') 
+    @include('rtc.footer') 
 @endsection 
 @section('content') 
     @yield('content') 

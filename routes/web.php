@@ -14,48 +14,47 @@
 Route::get('/', function () {
     if (request()->ajax()) return 
         response()->json([
-            'html'=>view('home')->with(['title'=>'Home'])->render(),
+            'html'=>view('rtc.home')->with(['title'=>'Home'])->render(),
             'title'=>'Home'
         ]);
-    return view('home')->with(['title'=>'home']);
+    return view('rtc.home')->with(['title'=>'home']);
 })->name('rtc.home');
 
 Route::get('about', function () {
     if (request()->ajax()) return 
         response()->json([
-            'html'=>view('about')->with(['title'=>'about'])->render(),
+            'html'=>view('rtc.about')->with(['title'=>'about'])->render(),
             'title'=>'about'
         ]);
-    return view('about')->with(['title'=>'about']);
+    return view('rtc.about')->with(['title'=>'about']);
 })->name('rtc.about');
 
 Route::get('/portfolio', function () {
     if (request()->ajax()) return 
         response()->json([
-            'html'=>view('portfolio')->with(['title'=>'portfolio'])->render(),
+            'html'=>view('rtc.portfolio')->with(['title'=>'portfolio'])->render(),
             'title'=>'portfolio'
         ]);
-    return view('portfolio')->with(['title'=>'portfolio']);
+    return view('rtc.portfolio')->with(['title'=>'portfolio']);
 })->name('rtc.portfolio');
 
 Route::get('/contact', function () {
     if (request()->ajax()) return 
         response()->json([
-            'html'=>view('contact')->with(['title'=>'contact'])->render(),
+            'html'=>view('rtc.contact')->with(['title'=>'contact'])->render(),
             'title'=>'contact',
             'run'=>'contact_me'
         ]);
-    return view('contact')->with(['title'=>'contact']);
+    return view('rtc.contact')->with(['title'=>'contact']);
 })->name('rtc.contact');
 
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
 
-Route::domain('club.www.ahkui.com')->group(function () {
-    Route::get('user/{id?}', function ($id) {
-        dd($id);
-    });
-});    Route::get('user/{id?}', function ($id) {
-        dd($id,"");
-    });
+Route::domain('club.ahkui.com')->group(function () {
+
+});
+Route::get('/club', function () {
+    return view('iosclub.home')->with(['title'=>'iosclub']);
+})->name('iosclub.home');

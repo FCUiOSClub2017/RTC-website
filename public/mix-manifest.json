@@ -1,6 +1,8 @@
 {
+    "/js/iosclub.js": "/js/iosclub.js",
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/css/rtc.css": "/css/rtc.css",
+    "/css/iosclub.css": "/css/iosclub.css",
     "/js/rtc.js": "/js/rtc.js"
 }

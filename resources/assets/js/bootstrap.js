@@ -54,3 +54,6 @@ if (token) {
 //     broadcaster: 'pusher',
 //     key: 'your-pusher-key'
 // });
+
+window.RTC = require('./rtc');
+require('./rtc/freelancer');

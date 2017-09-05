@@ -51,9 +51,13 @@ window.onpopstate = function(e) {
 @endsection 
 @push('scripts')
 <script src="{{asset('js/rtc.js')}}"></script>
-
 @endpush 
 @push('css')
 <link href="{{asset('css/rtc.css')}}" rel="stylesheet"></link>
-
 @endpush
+@section('addon-script') 
+    @parent
+    <script>
+        RTC.run();
+    </script>
+@endsection 

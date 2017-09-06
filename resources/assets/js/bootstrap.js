@@ -15,7 +15,6 @@ if (window.jQuery) {
     // window.Stellar = require('./guardian/jquery.stellar.min');
     require('./guardian/jquery.waypoints.min.js');
     require('./guardian/hoverIntent.js');
-    require('./guardian/superfish.js');
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');

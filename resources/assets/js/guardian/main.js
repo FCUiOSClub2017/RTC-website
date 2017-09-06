@@ -94,7 +94,7 @@
         mobileMenuOutsideClick();
         contentWayPoint();
         $(window).scroll(function() {
-            if ($("#fh5co-header-section").offset().top > 1) {
+            if ($("#fh5co-header-section").offset().top > $(window).height()*0.65) {
                 $("#fh5co-header-section").addClass("navbar-shrink");
             } else {
                 $("#fh5co-header-section").removeClass("navbar-shrink");

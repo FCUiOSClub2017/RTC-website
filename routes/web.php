@@ -10,12 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::domain('club.'.str_replace('http://','',env('APP_URL')))->group(function () {
-    Route::get('/', function () {
-        return view('iosclub.home')->with(['title'=>'iosclub']);
-    })->name('iosclub.home');
-
-});
 // Route::domain('club.rtc.ahkui.com')->group($clubroute);
 // Route::domain('club.ahkui.com')->group($clubroute);
 // Route::domain('club.ahkui.com:99')->group($clubroute);
@@ -62,3 +56,9 @@ Route::domain(str_replace('http://','',env('APP_URL')))->group(function () {
 });
 
 // Route::get('/home', 'HomeController@index')->name('home');
+Route::domain('club.'.str_replace('http://','',env('APP_URL')))->group(function () {
+    Route::get('/', function () {
+        return view('iosclub.home')->with(['title'=>'iosclub']);
+    })->name('iosclub.home');
+
+});

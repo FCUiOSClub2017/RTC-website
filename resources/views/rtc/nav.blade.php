@@ -58,7 +58,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" data-href="{{route('rtc.home')}}" onclick="Load_with_axios(this)" href="header">Home</a>
+                    <a class="nav-link" data-href="{{route('rtc.home')}}" onclick="Load_with_axios(this)" href="#header">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="js-scroll-trigger nav-link"{{--  data-href="{{route('rtc.portfolio')}}" onclick="Load_with_axios(this)" --}} href="#portfolio">Portfolio</a>

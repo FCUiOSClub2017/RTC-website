@@ -39,7 +39,7 @@
         </a>
     </div>
 </header> --}}
-<header class="masthead">
+<header class="masthead" id="header">
     <div class="container">
         <img class="img-fluid" src="img/profile.png" alt="">
         <div class="intro-text">

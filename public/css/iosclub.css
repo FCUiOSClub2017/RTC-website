@@ -3288,7 +3288,7 @@ Copyright (c) 2015 Daniel Eden
 @font-face {
   font-family: 'icomoon';
   src: url(/fonts/icomoon.eot?95440829a854d837491ec4c761ffdaee);
-  src: url(/fonts/icomoon.eot?95440829a854d837491ec4c761ffdaee) format("embedded-opentype"), url(/fonts/icomoon.ttf?9b9208b59529ebc574d660881bfeb266) format("truetype"), url(/fonts/icomoon.woff?d06d2a075295336e8df7457c83c3d245) format("woff"), url(/fonts/icomoon.svg?e4a28ac3de97f5ebb08431a5d8b50a7c) format("svg");
+  src: url(/fonts/icomoon.eot?95440829a854d837491ec4c761ffdaee) format("embedded-opentype"), url(/fonts/icomoon.ttf?9b9208b59529ebc574d660881bfeb266) format("truetype"), url(/fonts/icomoon.woff?d06d2a075295336e8df7457c83c3d245) format("woff"), url(/fonts/icomoon.svg?244aaab0682266f9bfe31d7738f2526a) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -7601,7 +7601,7 @@ Copyright (c) 2015 Daniel Eden
 @font-face {
   font-family: 'icomoon';
   src: url(/fonts/icomoon.eot?95440829a854d837491ec4c761ffdaee);
-  src: url(/fonts/icomoon.eot?95440829a854d837491ec4c761ffdaee) format("embedded-opentype"), url(/fonts/icomoon.ttf?9b9208b59529ebc574d660881bfeb266) format("truetype"), url(/fonts/icomoon.woff?d06d2a075295336e8df7457c83c3d245) format("woff"), url(/fonts/icomoon.svg?e4a28ac3de97f5ebb08431a5d8b50a7c) format("svg");
+  src: url(/fonts/icomoon.eot?95440829a854d837491ec4c761ffdaee) format("embedded-opentype"), url(/fonts/icomoon.ttf?9b9208b59529ebc574d660881bfeb266) format("truetype"), url(/fonts/icomoon.woff?d06d2a075295336e8df7457c83c3d245) format("woff"), url(/fonts/icomoon.svg?244aaab0682266f9bfe31d7738f2526a) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -7684,13 +7684,13 @@ figure {
 .fh5co-cover,
 .fh5co-hero {
   position: relative;
-  height: 800px;
+  height: 100vh;
 }
 
 @media screen and (max-width: 768px) {
   .fh5co-cover,
   .fh5co-hero {
-    height: 700px;
+    height: 100vh;
   }
 }
 

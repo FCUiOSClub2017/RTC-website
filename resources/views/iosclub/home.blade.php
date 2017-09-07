@@ -23,7 +23,7 @@
                             <div class="nav-header h-100">
                                 <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
                                 <div id="fh5co-logo">
-                                    <div><img src="img/iosclub.png" alt="IOS Club" height="50px"><a class="js-scroll-trigger" href="#app"> <span>IOS Club</span></a></div>
+                                    <div><img src="img/iosclub.png" alt="IOS Club" height="50px"><a class="js-scroll-trigger" href="#app"> <span>iOS Club</span></a></div>
                                 </div>
                                 <nav id="fh5co-menu-wrap" role="navigation">
                                     <ul class="sf-menu" id="fh5co-primary-menu">
@@ -109,7 +109,7 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-                                <h3>一個在課堂之外<br>促進學習和實踐的iOS開發者社團</h3>
+                                <h3>一個在課堂之外<br>促進學習和實踐的 iOS 開發者社團</h3>
                             </div>
                         </div>
                     </div>
@@ -229,7 +229,7 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-                                <h3>在社團活動中<br>打開通往iOS開發世界的大門</h3>
+                                <h3>在社團活動中<br>打開通往 iOS 開發世界的大門</h3>
                             </div>
                         </div>
                     </div>
@@ -248,7 +248,7 @@
                                     <figure>
                                         <img src="img/wwdc17.png" width="100%">
                                     </figure>
-                                    <h3>一起看WWDC</h3> {{--
+                                    <h3>一起看 WWDC</h3> {{--
                                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
                                 </div>
                             </div>

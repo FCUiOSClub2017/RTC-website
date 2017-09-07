@@ -9,8 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{csrf_token()}}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/iosclub.css') }}" rel="stylesheet"> @stack('css')
-    {{-- Modernizr JS --}}
+    <link href="{{ asset('css/iosclub.css') }}" rel="stylesheet"> @stack('css') {{-- Modernizr JS --}}
     <script src="js/modernizr-2.6.2.min.js"></script>
 </head>
 
@@ -24,15 +23,34 @@
                             <div class="nav-header h-100">
                                 <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
                                 <div id="fh5co-logo">
-                                    <div><img src="img/iosclub.png" alt="IOS Club" height="50px"><a href="{{route('iosclub.home')}}"> <span>IOS Club</span></a></div>
+                                    <div><img src="img/iosclub.png" alt="IOS Club" height="50px"><a class="js-scroll-trigger" href="#app"> <span>IOS Club</span></a></div>
                                 </div>
                                 <nav id="fh5co-menu-wrap" role="navigation">
                                     <ul class="sf-menu" id="fh5co-primary-menu">
+                                        {{--
                                         <li>
                                             <a href="{{route('rtc.home')}}">RTC官網</a>
                                         </li>
                                         <li class="active">
-                                            <a href="{{route('iosclub.home')}}">首頁</a>
+                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#app">首頁</a>
+                                        </li> --}}
+                                        <li>
+                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-start-section">開始</a>
+                                        </li>
+                                        <li>
+                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-jieshao-section">介紹</a>
+                                        </li>
+                                        <li>
+                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-zuzhi-section">組織</a>
+                                        </li>
+                                        <li>
+                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-ganbu-section">幹部</a>
+                                        </li>
+                                        <li>
+                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-huodong-section">活動</a>
+                                        </li>
+                                        <li>
+                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-jiaoliu-section">交流</a>
                                         </li>
                                         {{--
                                         <li>
@@ -76,18 +94,18 @@
                         </div>
                     </header>
                 </div>
-                <div class="fh5co-hero">
+                <div class="fh5co-hero" id="fh5co-hero">
                     <div class="fh5co-overlay"></div>
                     <div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(img/home-image.jpg);">
                         <div class="desc animate-box">
                             <h2>想要了解我們嗎？</h2>
                             <span>繼續往下看</span>
-                            <span><a class="btn btn-primary js-scroll-trigger" href="#fh5co-services-section">GO！</a></span>
+                            <span><a class="btn btn-primary js-scroll-trigger" href="#fh5co-start-section">GO！</a></span>
                         </div>
                     </div>
                 </div>
                 {{-- end:header-top --}}
-                <div id="fh5co-services-section" class="fh5co-section-gray">
+                <div id="fh5co-start-section">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
@@ -136,7 +154,7 @@
                     </div>
                 </div>
                 {{-- fh5co-services-section --}}
-                <div id="fh5co-work-section">
+                <div id="fh5co-jieshao-section" class="fh5co-section-gray">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
@@ -195,7 +213,19 @@
                     </div>
                 </div>
                 {{-- fh5co-work-section --}}
-                <div id="fh5co-content-section" class="fh5co-section-gray">
+                <div id="fh5co-zuzhi-section">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+                                <h3>我們的組織</h3>
+                            </div>
+                            <div class="col-8 animate-box">
+                                <img src="img/zuzhi.png" alt="" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="fh5co-huodong-section" class="fh5co-section-gray">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
@@ -246,7 +276,7 @@
                     </div>
                 </div>
                 {{-- fh5co-services-section --}}
-                <div id="fh5co-content-section">
+                <div id="fh5co-jiaoliu-section">
                     <div class="container">
                         <div class="row text-center justify-content-center">
                             <div class="col-12">
@@ -290,7 +320,7 @@
                     </div>
                 </div>
                 {{-- fh5co-services-section --}}
-                <div id="fh5co-content-section" class="fh5co-section-gray">
+                <div id="fh5co-xuexi-section" class="fh5co-section-gray">
                     <div class="container">
                         <div class="row text-center justify-content-center">
                             <div class="col-12">
@@ -334,7 +364,7 @@
                     </div>
                 </div>
                 {{-- fh5co-services-section --}}
-                <div id="fh5co-content-section">
+                <div id="fh5co-shijian-section">
                     <div class="container">
                         <div class="row text-center justify-content-center">
                             <div class="col-12">
@@ -378,7 +408,7 @@
                     </div>
                 </div>
                 {{-- fh5co-services-section --}}
-                <div id="fh5co-content-section" class="fh5co-section-gray">
+                <div id="fh5co-chuangzao-section" class="fh5co-section-gray">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
@@ -396,7 +426,8 @@
                                         <img src="img/SteveJobs.png" alt="user">
                                     </figure>
                                     <blockquote>
-                                        <p>「Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while. 創意不外乎就是在不同事件之間搭建橋樑。如果你問那些有創意的人他們如何做事，他們或許會感到些許罪惡，因為他們沒有真的在『創造』一個東西，他們只是善於觀察不同事物，而想到每件事之間的可能性。」</p>
+                                        <p>「Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while.
+                                            <br>創意不外乎就是在不同事件之間搭建橋樑。如果你問那些有創意的人他們如何做事，他們或許會感到些許罪惡，因為他們沒有真的在『創造』一個東西，他們只是善於觀察不同事物，而想到每件事之間的可能性。」</p>
                                     </blockquote>
                                     <span>Steve Jobs, Apple Inc.</span>
                                 </div>
@@ -486,11 +517,24 @@
     </div>
     <script src="{{asset('js/iosclub.js')}}"></script>
     <script src="{{asset('js/app.js')}}"></script>
-    
-    <script src="js/jquery.stellar.min.js"></script> 
+    <script src="js/jquery.stellar.min.js"></script>
     <script>
     CLUB.run()
     $.stellar();
+    $(window).scroll(function(event) {
+        var fromTop = $(this).scrollTop() + 60;
+        var id = $('[id^="fh5co-"][id$="-section"]').map(function() {
+            if ($(this).offset().top < fromTop)
+                return this;
+        }).last()[0].id;
+        if (id == 'fh5co-header-section') {
+            id = 'app'
+        }
+        $('a.js-scroll-trigger-active').parent().removeClass("active")
+        if (!$("a.js-scroll-trigger-active[href='#" + id + "']").parent().hasClass("active"))
+            $("a.js-scroll-trigger-active[href='#" + id + "']").parent().addClass("active");
+
+    });
     </script>
 </body>
 

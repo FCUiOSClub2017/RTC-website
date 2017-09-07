@@ -19,11 +19,25 @@ if (window.jQuery) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
+            if ($(window).width() > 769) {
+                if ($('body').hasClass('fh5co-offcanvas')) {
+                    $('body').removeClass('fh5co-offcanvas');
+                }
+            }
             $('html, body').animate({
                 scrollTop: (target.offset().top - 48)
             }, 1000, "easeInOutExpo");
+
+
             return false;
         }
+    });
+
+
+    $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').click(function() {
+        $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().removeClass('active')
+        $(this).parent().addClass('active')
+        console.log($(this).parent())
     });
 }
 

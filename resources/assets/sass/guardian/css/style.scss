@@ -12,7 +12,6 @@
 // * Edit this section
 // *
 // * ======================================================= */
-
 body {
     line-height: 1.8;
     font-size: 16px;
@@ -22,10 +21,9 @@ body {
     overflow-x: hidden;
 }
 
-body.fh5co-offcanvas {
-    overflow: hidden;
-}
-
+// body.fh5co-offcanvas {
+//     overflow: hidden;
+// }
 a {
     color: #FCC72C;
     -webkit-transition: 0.5s;
@@ -87,9 +85,7 @@ figure {
     background-position: bottom;
     position: relative;
     height: 100vh;
-    @media screen and (max-width: 768px) {
-        height: 100vh;
-    }
+    min-height: 320px;
 }
 
 
@@ -200,7 +196,6 @@ figure {
 }
 
 // /* Superfish Override Menu */
-
 .sf-menu {
     margin: 0 !important;
 }
@@ -309,9 +304,8 @@ figure {
 
 #fh5co-header-section {
     padding: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: fixed; // top: 0;
+    // left: 0;
     width: 100%;
     z-index: 2;
     padding: 1.5rem 0;
@@ -1004,32 +998,31 @@ figure {
     position: relative;
 }
 
-.fh5co-offcanvas {
-    overflow: hidden;
-}
-
-.fh5co-offcanvas #fh5co-wrapper {
-    overflow: hidden !important;
-}
-
+// .fh5co-offcanvas {
+//     overflow: hidden;
+// }
+// .fh5co-offcanvas #fh5co-wrapper {
+//     overflow: hidden !important;
+// }
 #fh5co-page {
     position: relative;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
-}
-
-.fh5co-offcanvas #fh5co-page {
-    -moz-transform: translateX(-240px);
-    -webkit-transform: translateX(-240px);
-    -ms-transform: translateX(-240px);
-    -o-transform: translateX(-240px);
-    transform: translateX(-240px);
+    left:0;
+    .fh5co-offcanvas & {
+        // -moz-transform: translateX(-240px);
+        // -webkit-transform: translateX(-240px);
+        // -ms-transform: translateX(-240px);
+        // -o-transform: translateX(-240px);
+        // transform: translateX(-240px);
+        left: -240px;
+    }
 }
 
 
 #offcanvas-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     z-index: 99;
@@ -1037,7 +1030,12 @@ figure {
     right: -240px;
     width: 240px;
     padding: 20px;
-    overflow-y: scroll !important;
+    overflow-y: auto;
+    transition: 0.5s;
+    height:100vh;
+    .fh5co-offcanvas & {
+        right: 0;
+    }
 }
 
 #offcanvas-menu ul {
@@ -1288,6 +1286,10 @@ figure {
     z-index: 9999;
     background: url(../images/hourglass.svg) center no-repeat #222222;
 }
+
+
+
+
 
 
 

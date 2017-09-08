@@ -48,17 +48,6 @@
         $('.js-fh5co-nav-toggle').on('click', function() {
             $('body').toggleClass('fh5co-offcanvas');
         });
-        $(window).on( "swipeleft", function(){
-            if(!$('body').hasClass('fh5co-offcanvas')){
-                $('body').addClass('fh5co-offcanvas');
-            }
-        });
-        $(window).on( "swiperight", function(){
-            if($('body').hasClass('fh5co-offcanvas')){
-                $('body').removeClass('fh5co-offcanvas');
-            }
-        });
-
         $(window).resize(function() {
             if ($(window).width() > 769) {
                 if ($('body').hasClass('fh5co-offcanvas')) {
@@ -111,6 +100,21 @@
                 $("#fh5co-header-section").removeClass("navbar-shrink");
             }
         });
+        window.Swipe.SetLeft(function() {
+            if ($(window).width() > 769) {
+                if (!$('body').hasClass('fh5co-offcanvas')) {
+                    $('body').addClass('fh5co-offcanvas');
+                }
+            }
+        });
+
+        window.Swipe.SetRight(function() {
+            if ($(window).width() > 769) {
+                if ($('body').hasClass('fh5co-offcanvas')) {
+                    $('body').removeClass('fh5co-offcanvas');
+                }
+            }
+        })
     }
     module.exports = {
         run: run

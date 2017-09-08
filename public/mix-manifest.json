@@ -3,6 +3,12 @@
     "/css/app.css": "/css/app.css",
     "/css/rtc.css": "/css/rtc.css",
     "/css/iosclub.css": "/css/iosclub.css",
+    "/js/app.js.map": "/js/app.js.map",
+    "/css/app.css.map": "/css/app.css.map",
+    "/css/rtc.css.map": "/css/rtc.css.map",
+    "/css/iosclub.css.map": "/css/iosclub.css.map",
     "/js/iosclub.js": "/js/iosclub.js",
-    "/js/rtc.js": "/js/rtc.js"
+    "/js/iosclub.js.map": "/js/iosclub.js.map",
+    "/js/rtc.js": "/js/rtc.js",
+    "/js/rtc.js.map": "/js/rtc.js.map"
 }

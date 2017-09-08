@@ -8,6 +8,7 @@ window._ = require('lodash');
 
 if (window.jQuery) {
     window.Popper = require('../../../node_modules/popper.js/dist/umd/popper.js');
+    window.Swipe = require('./Swipe.js');
     require('bootstrap');
     require('../../../node_modules/jquery.easing/jquery.easing.1.3.js');
     require('./jqBootstrapValidation.js');

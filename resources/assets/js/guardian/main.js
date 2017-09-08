@@ -2,16 +2,16 @@
 (function() {
 
     'use strict';
-    // iPad and iPod detection	
-    var isiPad = function() {
-        return (navigator.platform.indexOf("iPad") != -1);
-    };
-    var isiPhone = function() {
-        return (
-            (navigator.platform.indexOf("iPhone") != -1) ||
-            (navigator.platform.indexOf("iPod") != -1)
-        );
-    };
+    // iPad and iPod detection  
+    // var isiPad = function() {
+    //     return (navigator.platform.indexOf("iPad") != -1);
+    // };
+    // var isiPhone = function() {
+    //     return (
+    //         (navigator.platform.indexOf("iPhone") != -1) ||
+    //         (navigator.platform.indexOf("iPod") != -1)
+    //     );
+    // };
     // Main Menu Superfish
     var mainMenu = function() {
 
@@ -30,26 +30,31 @@
         var $clone = $('#fh5co-menu-wrap').clone();
         $clone.attr({
             'id': 'offcanvas-menu'
+        }).find('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('body').removeClass('fh5co-offcanvas');
+                $('html, body').animate({
+                    scrollTop: (target.offset().top - 48)
+                }, 1000, "easeInOutExpo");
+                return false;
+            }
         });
-        $clone.find('> ul').attr({
-            'class': '',
-            'id': ''
-        });
+        $clone.find('> ul').removeAttr('class').removeAttr('id');
         $('#fh5co-page').prepend($clone);
         // click the burger
         $('.js-fh5co-nav-toggle').on('click', function() {
-            if ($('body').hasClass('fh5co-offcanvas')) {
-                $('body').removeClass('fh5co-offcanvas');
-            } else {
-                $('body').addClass('fh5co-offcanvas');
-            }
-            // $('body').toggleClass('fh5co-offcanvas');
+            // if ($('body').hasClass('fh5co-offcanvas')) {
+            //     $('body').removeClass('fh5co-offcanvas');
+            // } else {
+            //     $('body').addClass('fh5co-offcanvas');
+            // }
+            $('body').toggleClass('fh5co-offcanvas');
         });
-        $('#offcanvas-menu').css('height', $(window).height());
+
         $(window).resize(function() {
-            var w = $(window);
-            $('#offcanvas-menu').css('height', w.height());
-            if (w.width() > 769) {
+            if ($(window).width() > 769) {
                 if ($('body').hasClass('fh5co-offcanvas')) {
                     $('body').removeClass('fh5co-offcanvas');
                 }
@@ -94,7 +99,7 @@
         mobileMenuOutsideClick();
         contentWayPoint();
         $(window).scroll(function() {
-            if ($("#fh5co-header-section").offset().top > $(window).height()*0.65) {
+            if ($("#fh5co-header-section").offset().top > 1) {
                 $("#fh5co-header-section").addClass("navbar-shrink");
             } else {
                 $("#fh5co-header-section").removeClass("navbar-shrink");

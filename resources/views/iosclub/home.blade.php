@@ -18,10 +18,10 @@
         <div id="fh5co-wrapper">
             <div id="fh5co-page">
                 <div id="fh5co-header">
-                    <header id="fh5co-header-section">
+                    <header id="fh5co-header-section" class="main-nav">
                         <div class="container h-100">
                             <div class="nav-header h-100">
-                                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+                                <a class="js-fh5co-nav-toggle fh5co-nav-toggle clickable"><i></i></a>
                                 <div id="fh5co-logo">
                                     <div><img src="img/iosclub.png" alt="IOS Club" height="50px"><a class="js-scroll-trigger" href="#app"> <span>iOS Club</span></a></div>
                                 </div>

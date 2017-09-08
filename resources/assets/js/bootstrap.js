@@ -19,16 +19,12 @@ if (window.jQuery) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
-            if ($(window).width() > 769) {
-                if ($('body').hasClass('fh5co-offcanvas')) {
-                    $('body').removeClass('fh5co-offcanvas');
-                }
+            if ($('body').hasClass('fh5co-offcanvas')) {
+                $('body').removeClass('fh5co-offcanvas');
             }
             $('html, body').animate({
-                scrollTop: (target.offset().top - 48)
+                scrollTop: (target.offset().top - 60)
             }, 1000, "easeInOutExpo");
-
-
             return false;
         }
     });

@@ -216,10 +216,11 @@
                 <div id="fh5co-zuzhi-section">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-md-8 col-12 text-center heading-section animate-box">
+                            <div class="col text-center heading-section animate-box">
                                 <h3>組織</h3>
                             </div>
-                            <div class="col-8 animate-box">
+                            <div class="w-100"></div>
+                            <div class="col animate-box">
                                 <img src="img/zuzhi.png" alt="" width="100%">
                             </div>
                         </div>

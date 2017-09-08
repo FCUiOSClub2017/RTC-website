@@ -220,7 +220,7 @@
                                 <h3>組織</h3>
                             </div>
                             <div class="w-100"></div>
-                            <div class="col animate-box">
+                            <div class="col-10 animate-box">
                                 <img src="img/zuzhi.png" alt="" width="100%">
                             </div>
                         </div>

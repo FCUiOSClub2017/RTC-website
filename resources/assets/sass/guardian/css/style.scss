@@ -12,6 +12,7 @@
 // * Edit this section
 // *
 // * ======================================================= */
+
 body {
     line-height: 1.8;
     font-size: 16px;
@@ -199,6 +200,7 @@ figure {
 }
 
 // /* Superfish Override Menu */
+
 .sf-menu {
     margin: 0 !important;
 }
@@ -549,7 +551,7 @@ figure {
     padding-bottom: 1em;
     margin-bottom: 3.5em;
 
-    :after {
+    &:after {
         position: absolute;
         content: '';
         bottom: 0;
@@ -1286,7 +1288,6 @@ figure {
     z-index: 9999;
     background: url(../images/hourglass.svg) center no-repeat #222222;
 }
-
 
 
 

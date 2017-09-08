@@ -101,7 +101,7 @@
             }
         });
         window.Swipe.SetLeft(function() {
-            if ($(window).width() > 769) {
+            if ($(window).width() <= 769) {
                 if (!$('body').hasClass('fh5co-offcanvas')) {
                     $('body').addClass('fh5co-offcanvas');
                 }
@@ -109,7 +109,7 @@
         });
 
         window.Swipe.SetRight(function() {
-            if ($(window).width() > 769) {
+            if ($(window).width() <= 769) {
                 if ($('body').hasClass('fh5co-offcanvas')) {
                     $('body').removeClass('fh5co-offcanvas');
                 }

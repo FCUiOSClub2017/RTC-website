@@ -6,26 +6,12 @@
     font-style: normal;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* =======================================================
-*
-*   Template Style 
-* Edit this section
-*
-* ======================================================= */
+// /* =======================================================
+// *
+// *   Template Style 
+// * Edit this section
+// *
+// * ======================================================= */
 
 body {
     line-height: 1.8;
@@ -98,6 +84,7 @@ figure {
 
 .fh5co-cover,
 .fh5co-hero {
+    background-position: bottom;
     position: relative;
     height: 100vh;
     @media screen and (max-width: 768px) {
@@ -137,11 +124,8 @@ figure {
 .fh5co-cover {
     background-size: cover;
     position: relative;
-}
-
-@media screen and (max-width: 768px) {
-    .fh5co-cover {
-        heifght: inherit;
+    @media screen and (max-width: 768px) {
+        height: inherit;
         padding: 3em 0;
     }
 }
@@ -153,14 +137,12 @@ figure {
 
 .fh5co-cover.fh5co-cover_2 {
     height: 600px;
-}
-
-@media screen and (max-width: 768px) {
-    .fh5co-cover.fh5co-cover_2 {
-        heifght: inherit;
+    @media screen and (max-width: 768px) {
+        height: inherit;
         padding: 3em 0;
     }
 }
+
 
 .fh5co-cover .desc {
     top: 50%;
@@ -179,8 +161,7 @@ figure {
 }
 
 .fh5co-cover .desc h2 {
-    color: #fff;
-    // text-transform: uppercase;
+    color: #fff; // text-transform: uppercase;
     font-size: 60px;
     margin-bottom: 10px;
 }
@@ -218,21 +199,7 @@ figure {
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Superfish Override Menu */
+// /* Superfish Override Menu */
 
 .sf-menu {
     margin: 0 !important;
@@ -401,8 +368,7 @@ figure {
 #fh5co-logo {
     position: relative;
     z-index: 2;
-    font-size: 28px;
-    // text-transform: uppercase; // margin-top: 35px;
+    font-size: 28px; // text-transform: uppercase; // margin-top: 35px;
     font-weight: 300;
     float: left;
     @media screen and (max-width: 768px) {
@@ -569,7 +535,7 @@ figure {
 }
 
 [id^="fh5co-"][id$="-section"],
-[id^="fh5co-"][id$="-section_2"]{
+[id^="fh5co-"][id$="-section_2"] {
     padding: 4em 0;
     @media screen and (max-width: 768px) {
         padding: 2.5em 0;
@@ -599,8 +565,7 @@ figure {
 
 .heading-section h3 {
     font-size: 30px;
-    letter-spacing: 2px;
-    // text-transform: uppercase;
+    letter-spacing: 2px; // text-transform: uppercase;
     position: relative;
 }
 
@@ -823,8 +788,7 @@ figure {
 
 .fh5co-testimonial h2 {
     font-size: 16px;
-    letter-spacing: 2px;
-    // text-transform: uppercase;
+    letter-spacing: 2px; // text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 50px;
 }
@@ -929,8 +893,7 @@ figure {
 
 #fh5co-start-project-section h2 {
     color: white;
-    font-size: 60px;
-    // text-transform: uppercase;
+    font-size: 60px; // text-transform: uppercase;
     font-weight: 300;
 }
 
@@ -982,8 +945,7 @@ figure {
 #footer p {
     color: rgba(255, 255, 255, 0.3);
     letter-spacing: 1px;
-    font-size: 14px;
-    // text-transform: uppercase;
+    font-size: 14px; // text-transform: uppercase;
 }
 
 #footer p a {
@@ -1142,8 +1104,7 @@ figure {
     width: 30px;
     height: 2px;
     color: #fff;
-    font: bold 14px/.4 Helvetica;
-    // text-transform: uppercase;
+    font: bold 14px/.4 Helvetica; // text-transform: uppercase;
     text-indent: -55px;
     background: #fff;
     transition: all .2s ease-out;
@@ -1327,6 +1288,9 @@ figure {
     z-index: 9999;
     background: url(../images/hourglass.svg) center no-repeat #222222;
 }
+
+
+
 
 
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>IOS CLUB</title>
+    <title>iOS Club</title>
     <link type="image/png" href="img/iosclub-logo.png" rel="icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{csrf_token()}}">
@@ -98,7 +98,7 @@
                     <div class="fh5co-overlay"></div>
                     <div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(img/home-image.jpg);">
                         <div class="desc animate-box">
-                            <h2>想要了解我們嗎？</h2>
+                            <h2>想要了解我們嗎</h2>
                             <span>繼續往下看</span>
                             <span><a class="btn btn-primary js-scroll-trigger" href="#fh5co-start-section">GO！</a></span>
                         </div>
@@ -216,8 +216,8 @@
                 <div id="fh5co-zuzhi-section">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-                                <h3>我們的組織</h3>
+                            <div class="col-md-8 col-12 text-center heading-section animate-box">
+                                <h3>組織</h3>
                             </div>
                             <div class="col-8 animate-box">
                                 <img src="img/zuzhi.png" alt="" width="100%">

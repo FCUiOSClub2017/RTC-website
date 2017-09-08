@@ -30,7 +30,8 @@
         var $clone = $('#fh5co-menu-wrap').clone();
         $clone.attr({
             'id': 'offcanvas-menu'
-        }).find('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+        });
+        $clone.find('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
@@ -45,12 +46,17 @@
         $('#fh5co-page').prepend($clone);
         // click the burger
         $('.js-fh5co-nav-toggle').on('click', function() {
-            // if ($('body').hasClass('fh5co-offcanvas')) {
-            //     $('body').removeClass('fh5co-offcanvas');
-            // } else {
-            //     $('body').addClass('fh5co-offcanvas');
-            // }
             $('body').toggleClass('fh5co-offcanvas');
+        });
+        $(window).on( "swipeleft", function(){
+            if(!$('body').hasClass('fh5co-offcanvas')){
+                $('body').addClass('fh5co-offcanvas');
+            }
+        });
+        $(window).on( "swiperight", function(){
+            if($('body').hasClass('fh5co-offcanvas')){
+                $('body').removeClass('fh5co-offcanvas');
+            }
         });
 
         $(window).resize(function() {

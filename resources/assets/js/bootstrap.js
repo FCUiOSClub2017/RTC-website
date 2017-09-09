@@ -53,7 +53,7 @@ if (window.jQuery) {
             if (id == 'fh5co-header-section') {
                 id = 'app'
             }
-            $('a.js-scroll-trigger-active').parent().removeClass("active")
+            $("a.js-scroll-trigger-active:not[href='#" + id + "']").parent().removeClass("active")
             if (!$("a.js-scroll-trigger-active[href='#" + id + "']").parent().hasClass("active")) {
                 $("a.js-scroll-trigger-active[href='#" + id + "']").parent().addClass("active");
                 if ($('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().hasClass('sfHover')) {

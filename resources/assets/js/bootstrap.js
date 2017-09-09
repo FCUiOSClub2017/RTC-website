@@ -32,16 +32,16 @@ if (window.jQuery) {
     });
 
 
-    $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').click(function() {
-        $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().removeAttr('class')
-        if (!$(this).parent().hasClass('active')) {
-            $(this).parent().addClass('active')
-        }
-        // if ($(this).parent().hasClass('sfHover')) {
-        //     $(this).parent().removeClass('sfHover')
-        // }
-        // console.log($(this).parent())
-    });
+    // $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').click(function() {
+    //     $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().removeAttr('class')
+    //     if (!$(this).parent().hasClass('active')) {
+    //         $(this).parent().addClass('active')
+    //     }
+    //     // if ($(this).parent().hasClass('sfHover')) {
+    //     //     $(this).parent().removeClass('sfHover')
+    //     // }
+    //     // console.log($(this).parent())
+    // });
 
     $(window).scroll(function(event) {
         var fromTop = $(this).scrollTop() + 61;

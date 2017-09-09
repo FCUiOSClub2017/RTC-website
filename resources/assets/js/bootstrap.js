@@ -32,16 +32,16 @@ if (window.jQuery) {
     });
 
 
-    $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').click(function() {
-        $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().removeAttr('class')
-        if (!$(this).parent().hasClass('active')) {
-            $(this).parent().addClass('active')
-        }
-        // if ($(this).parent().hasClass('sfHover')) {
-        //     $(this).parent().removeClass('sfHover')
-        // }
-        // console.log($(this).parent())
-    });
+    // $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').click(function() {
+    //     $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().removeAttr('class')
+    //     if (!$(this).parent().hasClass('active')) {
+    //         $(this).parent().addClass('active')
+    //     }
+    //     // if ($(this).parent().hasClass('sfHover')) {
+    //     //     $(this).parent().removeClass('sfHover')
+    //     // }
+    //     // console.log($(this).parent())
+    // });
 
     $(window).scroll(function(event) {
         var fromTop = $(this).scrollTop() + 61;
@@ -53,9 +53,11 @@ if (window.jQuery) {
             if (id == 'fh5co-header-section') {
                 id = 'app'
             }
-            $('a.js-scroll-trigger-active').parent().removeClass("active")
+            $("a.js-scroll-trigger-active").parent().removeClass("active")
             if (!$("a.js-scroll-trigger-active[href='#" + id + "']").parent().hasClass("active")) {
                 $("a.js-scroll-trigger-active[href='#" + id + "']").parent().addClass("active");
+                if ($('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().hasClass('sfHover')) {
+                $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().removeClass('sfHover')}
                 if ($(this).parent().hasClass('sfHover')) {
                     $(this).parent().removeClass('sfHover')
                 }

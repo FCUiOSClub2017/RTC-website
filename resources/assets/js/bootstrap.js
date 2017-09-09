@@ -33,13 +33,13 @@ if (window.jQuery) {
 
 
     $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').click(function() {
-        $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().removeClass('active')
+        $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().removeAttr('class')
         if (!$(this).parent().hasClass('active')) {
             $(this).parent().addClass('active')
         }
-        if ($(this).parent().hasClass('sfHover')) {
-            $(this).parent().removeClass('sfHover')
-        }
+        // if ($(this).parent().hasClass('sfHover')) {
+        //     $(this).parent().removeClass('sfHover')
+        // }
         // console.log($(this).parent())
     });
 

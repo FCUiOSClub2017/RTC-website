@@ -32,11 +32,14 @@ if (window.jQuery) {
     });
 
 
-    // $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').click(function() {
-    //     $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().removeClass('active')
-    //     $(this).parent().addClass('active')
-    //     console.log($(this).parent())
-    // });
+    $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').click(function() {
+        $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().removeClass('active')
+        $(this).parent().addClass('active')
+        if ($(this).parent().hasClass('sfHover')) {
+            $(this).parent().removeClass('sfHover')
+        }
+        // console.log($(this).parent())
+    });
 }
 
 

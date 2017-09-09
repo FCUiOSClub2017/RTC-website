@@ -31,6 +31,12 @@
         $clone.attr({
             'id': 'offcanvas-menu'
         });
+        $clone.find('> ul').removeAttr('class').removeAttr('id');
+        $('#fh5co-page').prepend($clone);
+        // click the burger
+        $('.js-fh5co-nav-toggle').on('click', function() {
+            $('body').toggleClass('fh5co-offcanvas');
+        });
         $clone.find('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -41,12 +47,6 @@
                 }, 1000, "easeInOutExpo");
                 return false;
             }
-        });
-        $clone.find('> ul').removeAttr('class').removeAttr('id');
-        $('#fh5co-page').prepend($clone);
-        // click the burger
-        $('.js-fh5co-nav-toggle').on('click', function() {
-            $('body').toggleClass('fh5co-offcanvas');
         });
         $(window).resize(function() {
             if ($(window).width() > 769) {

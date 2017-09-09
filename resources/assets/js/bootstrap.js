@@ -20,6 +20,7 @@ if (window.jQuery) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
+            console.log(target)
             if ($('body').hasClass('fh5co-offcanvas')) {
                 $('body').removeClass('fh5co-offcanvas');
             }
@@ -31,11 +32,11 @@ if (window.jQuery) {
     });
 
 
-    $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').click(function() {
-        $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().removeClass('active')
-        $(this).parent().addClass('active')
-        console.log($(this).parent())
-    });
+    // $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').click(function() {
+    //     $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().removeClass('active')
+    //     $(this).parent().addClass('active')
+    //     console.log($(this).parent())
+    // });
 }
 
 

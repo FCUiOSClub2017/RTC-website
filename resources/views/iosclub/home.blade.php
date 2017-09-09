@@ -18,7 +18,7 @@
         <div id="fh5co-wrapper">
             <div id="fh5co-page">
                 <div id="fh5co-header">
-                    <header id="fh5co-header-section" class="main-nav">
+                    <header id="fh5co-header-section">
                         <div class="container h-100">
                             <div class="nav-header h-100">
                                 <a class="js-fh5co-nav-toggle fh5co-nav-toggle clickable"><i></i></a>

@@ -20,6 +20,7 @@ if (window.jQuery) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
+            console.log(target)
             if ($('body').hasClass('fh5co-offcanvas')) {
                 $('body').removeClass('fh5co-offcanvas');
             }
@@ -32,10 +33,37 @@ if (window.jQuery) {
 
 
     $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').click(function() {
-        $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().removeClass('active')
-        $(this).parent().addClass('active')
-        console.log($(this).parent())
+        $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().removeAttr('class')
+        if (!$(this).parent().hasClass('active')) {
+            $(this).parent().addClass('active')
+        }
+        // if ($(this).parent().hasClass('sfHover')) {
+        //     $(this).parent().removeClass('sfHover')
+        // }
+        // console.log($(this).parent())
     });
+
+    $(window).scroll(function(event) {
+        var fromTop = $(this).scrollTop() + 61;
+        var id = $('[id^="fh5co-"][id$="-section"]').map(function() {
+            if ($(this).offset().top < fromTop)
+                return this;
+        }).last()[0].id;
+        if (id) {
+            if (id == 'fh5co-header-section') {
+                id = 'app'
+            }
+            $('a.js-scroll-trigger-active').parent().removeClass("active")
+            if (!$("a.js-scroll-trigger-active[href='#" + id + "']").parent().hasClass("active")) {
+                $("a.js-scroll-trigger-active[href='#" + id + "']").parent().addClass("active");
+                if ($(this).parent().hasClass('sfHover')) {
+                    $(this).parent().removeClass('sfHover')
+                }
+            }
+        }
+
+    });
+
 }
 
 

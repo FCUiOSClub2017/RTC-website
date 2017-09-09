@@ -18,7 +18,7 @@
         <div id="fh5co-wrapper">
             <div id="fh5co-page">
                 <div id="fh5co-header">
-                    <header id="fh5co-header-section" class="main-nav">
+                    <header id="fh5co-header-section">
                         <div class="container h-100">
                             <div class="nav-header h-100">
                                 <a class="js-fh5co-nav-toggle fh5co-nav-toggle clickable"><i></i></a>
@@ -522,20 +522,6 @@
     <script>
     CLUB.run()
     $.stellar();
-    $(window).scroll(function(event) {
-        var fromTop = $(this).scrollTop() + 60;
-        var id = $('[id^="fh5co-"][id$="-section"]').map(function() {
-            if ($(this).offset().top < fromTop)
-                return this;
-        }).last()[0].id;
-        if (id == 'fh5co-header-section') {
-            id = 'app'
-        }
-        $('a.js-scroll-trigger-active').parent().removeClass("active")
-        if (!$("a.js-scroll-trigger-active[href='#" + id + "']").parent().hasClass("active"))
-            $("a.js-scroll-trigger-active[href='#" + id + "']").parent().addClass("active");
-
-    });
     </script>
 </body>
 

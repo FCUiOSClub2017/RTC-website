@@ -522,20 +522,6 @@
     <script>
     CLUB.run()
     $.stellar();
-    $(window).scroll(function(event) {
-        var fromTop = $(this).scrollTop() + 60;
-        var id = $('[id^="fh5co-"][id$="-section"]').map(function() {
-            if ($(this).offset().top < fromTop)
-                return this;
-        }).last()[0].id;
-        if (id == 'fh5co-header-section') {
-            id = 'app'
-        }
-        $('a.js-scroll-trigger-active').parent().removeClass("active")
-        if (!$("a.js-scroll-trigger-active[href='#" + id + "']").parent().hasClass("active"))
-            $("a.js-scroll-trigger-active[href='#" + id + "']").parent().addClass("active");
-
-    });
     </script>
 </body>
 

@@ -52,6 +52,15 @@
                                         <li>
                                             <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-jiaoliu-section">交流</a>
                                         </li>
+                                        <li>
+                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-learning-section">學習</a>
+                                        </li>
+                                        <li>
+                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-doing-section">創造</a>
+                                        </li>
+                                        <li>
+                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-mingyan-section">名言</a>
+                                        </li>
                                         {{--
                                         <li>
                                             <a href="portfolio.html" class="fh5co-sub-ddown">Projects</a>
@@ -239,7 +248,7 @@
                             <div class="col-12">
                                 <div class="services animate-box">
                                     {{-- <span><i class="icon-browser"></i></span> --}}
-                                    <h3>鞏固興趣</h3> {{--
+                                    <h3>社課時間</h3> {{--
                                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
                                 </div>
                             </div>
@@ -247,9 +256,9 @@
                                 <div class="services animate-box">
                                     {{-- <span><i class="icon-mobile"></i></span> --}}
                                     <figure>
-                                        <img src="img/wwdc17.png" width="100%">
+                                        <img src="img/tuesday.png" width="100%">
                                     </figure>
-                                    <h3>一起看 WWDC</h3> {{--
+                                    <h3>週二 入門</h3> {{--
                                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
                                 </div>
                             </div>
@@ -257,9 +266,9 @@
                                 <div class="services animate-box">
                                     {{-- <span><i class="icon-tools"></i></span> --}}
                                     <figure>
-                                        <img src="img/bestiosapp.png" width="100%">
+                                        <img src="img/friday.png" width="100%">
                                     </figure>
-                                    <h3>評選年度最受歡迎 iOS App</h3> {{--
+                                    <h3>週五 基礎</h3> {{--
                                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
                                 </div>
                             </div>
@@ -267,9 +276,9 @@
                                 <div class="services animate-box">
                                     {{-- <span><i class="icon-video"></i></span> --}}
                                     <figure>
-                                        <img src="img/straighta.png" width="100%">
+                                        <img src="img/saturday.png" width="100%">
                                     </figure>
-                                    <h3>學期末與校園體驗店聯合舉辦晚會</h3>{{--
+                                    <h3>週六 進階</h3>{{--
                                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
                                 </div>
                             </div>
@@ -283,7 +292,7 @@
                             <div class="col-12">
                                 <div class="services animate-box">
                                     {{-- <span><i class="icon-browser"></i></span> --}}
-                                    <h3>內部交流</h3> {{--
+                                    <h3>海外交流</h3> {{--
                                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
                                 </div>
                             </div>
@@ -291,9 +300,9 @@
                                 <div class="services animate-box">
                                     {{-- <span><i class="icon-mobile"></i></span> --}}
                                     <figure>
-                                        <img src="img/wwdc17.png" width="100%">
+                                        <img src="img/2017camp.jpg" width="100%">
                                     </figure>
-                                    <h3>iOS 開發資源、書籍分享會</h3> {{--
+                                    <h3>2017 夏令營</h3> {{--
                                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
                                 </div>
                             </div>
@@ -301,9 +310,9 @@
                                 <div class="services animate-box">
                                     {{-- <span><i class="icon-tools"></i></span> --}}
                                     <figure>
-                                        <img src="img/bestiosapp.png" width="100%">
+                                        <img src="img/event1.jpg" width="100%">
                                     </figure>
-                                    <h3>iOS 開發技巧、經驗交流會</h3> {{--
+                                    <h3>過程記錄</h3> {{--
                                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
                                 </div>
                             </div>
@@ -311,9 +320,9 @@
                                 <div class="services animate-box">
                                     {{-- <span><i class="icon-video"></i></span> --}}
                                     <figure>
-                                        <img src="img/straighta.png" width="100%">
+                                        <img src="img/event2.jpg" width="100%">
                                     </figure>
-                                    <h3>App 創意討論會</h3>{{--
+                                    <h3>過程記錄</h3>{{--
                                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
                                 </div>
                             </div>
@@ -321,7 +330,7 @@
                     </div>
                 </div>
                 {{-- fh5co-services-section --}}
-                <div id="fh5co-xuexi-section" class="fh5co-section-gray">
+                <div id="fh5co-learning-section" class="fh5co-section-gray">
                     <div class="container">
                         <div class="row text-center justify-content-center">
                             <div class="col-12">
@@ -365,7 +374,7 @@
                     </div>
                 </div>
                 {{-- fh5co-services-section --}}
-                <div id="fh5co-shijian-section">
+                <div id="fh5co-doing-section">
                     <div class="container">
                         <div class="row text-center justify-content-center">
                             <div class="col-12">
@@ -409,7 +418,7 @@
                     </div>
                 </div>
                 {{-- fh5co-services-section --}}
-                <div id="fh5co-chuangzao-section" class="fh5co-section-gray">
+                <div id="fh5co-mingyan-section" class="fh5co-section-gray">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">

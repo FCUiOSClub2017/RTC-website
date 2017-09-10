@@ -16,6 +16,7 @@
 
 Route::domain(str_replace('http://','',env('APP_URL')))->group(function () {
     Route::get('/', function () {
+        return redirect()->route('iosclub.home');
         if (request()->ajax()) return 
             response()->json([
                 'html'=>view('rtc.home')->with(['title'=>'Home'])->render(),

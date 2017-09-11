@@ -11,7 +11,7 @@
 
 <body>
 
-    <a href="{{route('iosclub.home')}}"></a>
+    <a href="{{route('iosclub.home')}}">go</a>
 </body>
 
 </html>

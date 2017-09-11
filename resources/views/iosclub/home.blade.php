@@ -35,31 +35,22 @@
                                             <a class="js-scroll-trigger js-scroll-trigger-active" href="#app">首頁</a>
                                         </li> --}}
                                         <li>
-                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-start-section">開始</a>
+                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-start-section">介紹</a>
                                         </li>
                                         <li>
-                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-jieshao-section">介紹</a>
-                                        </li>
-                                        <li>
-                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-zuzhi-section">組織</a>
-                                        </li>
+                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-zuzhi-section">組織架構</a>
+                                        </li>{{-- 
                                         <li>
                                             <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-ganbu-section">幹部</a>
+                                        </li> --}}
+                                        <li>
+                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-huodong-section">社團活動</a>
                                         </li>
                                         <li>
-                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-huodong-section">活動</a>
+                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-jiaoliu-section">海外交流</a>
                                         </li>
                                         <li>
-                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-jiaoliu-section">交流</a>
-                                        </li>
-                                        <li>
-                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-learning-section">學習</a>
-                                        </li>
-                                        <li>
-                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-doing-section">創造</a>
-                                        </li>
-                                        <li>
-                                            <a class="js-scroll-trigger js-scroll-trigger-active" href="#fh5co-mingyan-section">名言</a>
+                                            <a class="js-scroll-trigger" href="{{route('welcome.home')}}">宣傳</a>
                                         </li>
                                         {{--
                                         <li>
@@ -103,7 +94,7 @@
                         </div>
                     </header>
                 </div>
-                <div class="fh5co-hero" id="fh5co-hero">
+                <div class="fh5co-hero" id="fh5co-hero" >
                     <div class="fh5co-overlay"></div>
                     <div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(img/home-image.jpg);">
                         <div class="desc animate-box">
@@ -114,7 +105,7 @@
                     </div>
                 </div>
                 {{-- end:header-top --}}
-                <div id="fh5co-start-section">
+                <div id="fh5co-start-section" class="fh5co-section-gray">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
@@ -161,9 +152,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                {{-- fh5co-services-section --}}
-                <div id="fh5co-jieshao-section" class="fh5co-section-gray">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
@@ -226,7 +214,7 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col text-center heading-section animate-box">
-                                <h3>組織</h3>
+                                <h3>組織架構</h3>
                             </div>
                             <div class="w-100"></div>
                             <div class="col-11 animate-box">
@@ -330,94 +318,6 @@
                     </div>
                 </div>
                 {{-- fh5co-services-section --}}
-                <div id="fh5co-learning-section" class="fh5co-section-gray">
-                    <div class="container">
-                        <div class="row text-center justify-content-center">
-                            <div class="col-12">
-                                <div class="services animate-box">
-                                    {{-- <span><i class="icon-browser"></i></span> --}}
-                                    <h3>借鑒學習</h3> {{--
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <div class="services animate-box">
-                                    {{-- <span><i class="icon-mobile"></i></span> --}}
-                                    <figure>
-                                        <img src="img/wwdc17.png" width="100%">
-                                    </figure>
-                                    <h3>iOS 技術專家講座</h3> {{--
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <div class="services animate-box">
-                                    {{-- <span><i class="icon-tools"></i></span> --}}
-                                    <figure>
-                                        <img src="img/bestiosapp.png" width="100%">
-                                    </figure>
-                                    <h3>App 設計團隊交流</h3> {{--
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <div class="services animate-box">
-                                    {{-- <span><i class="icon-video"></i></span> --}}
-                                    <figure>
-                                        <img src="img/straighta.png" width="100%">
-                                    </figure>
-                                    <h3>分析優秀的 iOS App</h3>{{--
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {{-- fh5co-services-section --}}
-                <div id="fh5co-doing-section">
-                    <div class="container">
-                        <div class="row text-center justify-content-center">
-                            <div class="col-12">
-                                <div class="services animate-box">
-                                    {{-- <span><i class="icon-browser"></i></span> --}}
-                                    <h3>動手實踐</h3> {{--
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <div class="services animate-box">
-                                    {{-- <span><i class="icon-mobile"></i></span> --}}
-                                    <figure>
-                                        <img src="img/wwdc17.png" width="100%">
-                                    </figure>
-                                    <h3>編寫一段 iOS 代碼</h3> {{--
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <div class="services animate-box">
-                                    {{-- <span><i class="icon-tools"></i></span> --}}
-                                    <figure>
-                                        <img src="img/bestiosapp.png" width="100%">
-                                    </figure>
-                                    <h3>iOS 開發主題競賽</h3> {{--
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <div class="services animate-box">
-                                    {{-- <span><i class="icon-video"></i></span> --}}
-                                    <figure>
-                                        <img src="img/straighta.png" width="100%">
-                                    </figure>
-                                    <h3>完成一個 iOS App</h3>{{--
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> --}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {{-- fh5co-services-section --}}
                 <div id="fh5co-mingyan-section" class="fh5co-section-gray">
                     <div class="container">
                         <div class="row justify-content-center">
@@ -509,11 +409,11 @@
                             <div class="row justify-content-center">
                                 <div class="col-md-6 col-md-offset-3 text-center">
                                     <p class="fh5co-social-icons">
-                                        <a href="#"><i class="icon-twitter2"></i></a>
-                                        <a href="#"><i class="icon-facebook2"></i></a>
-                                        <a href="#"><i class="icon-instagram"></i></a>
-                                        <a href="#"><i class="icon-dribbble2"></i></a>
-                                        <a href="#"><i class="icon-youtube"></i></a>
+                                        {{-- <a href="#"><i class="icon-twitter2"></i></a> --}}
+                                        <a href="https://www.facebook.com/FCU.iOSClub/"><i class="icon-facebook2"></i></a>
+                                        {{-- <a href="#"><i class="icon-instagram"></i></a> --}}
+                                        {{-- <a href="#"><i class="icon-dribbble2"></i></a> --}}
+                                        {{-- <a href="#"><i class="icon-youtube"></i></a> --}}
                                     </p>
                                     <p>Copyright © 逢甲大學Feng Chia University All Rights Reserved.
                                         <br>Made with <i class="icon-heart3"></i> by iOS Club AhKui</p>

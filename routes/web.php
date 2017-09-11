@@ -69,7 +69,7 @@ Route::domain('club.'.str_replace('http://','',env('APP_URL')))->group(function 
 Route::domain('welcome.ahkui.com')->group(function () {
 // Route::domain('http://127.0.0.1')->group(function () {
     Route::get('/', function () {
-        return view('iosclub.home')->with(['title'=>'iosclub']);
+        return view('welcome.home');
     })->name('welcome.home');
 
 });

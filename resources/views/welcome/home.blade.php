@@ -386,7 +386,7 @@ color: darkgray;
 }
 
 46%{
-  font-size: 2.4rem;
+  font-size: 2.6rem;
 }
 
 53%{
@@ -398,7 +398,7 @@ color: darkgray;
 }
 
 64%{
-  font-size: 2.4rem;
+  font-size: 2.6rem;
 }
 
 70%{

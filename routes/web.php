@@ -57,8 +57,8 @@ Route::domain(str_replace('http://','',env('APP_URL')))->group(function () {
 });
 
 // Route::get('/home', 'HomeController@index')->name('home');
-Route::domain('club.'.str_replace('http://','',env('APP_URL')))->group(function () {
-// Route::domain('http://127.0.0.1')->group(function () {
+// Route::domain('club.'.str_replace('http://','',env('APP_URL')))->group(function () {
+Route::domain('http://127.0.0.1')->group(function () {
     Route::get('/', function () {
         return view('iosclub.home')->with(['title'=>'iosclub']);
     })->name('iosclub.home');
@@ -73,3 +73,6 @@ Route::domain('welcome.ahkui.com')->group(function () {
     })->name('welcome.home');
 
 });
+Route::get('/', function () {
+    return view('iosclub.home')->with(['title'=>'iosclub']);
+})->name('iosclub.home');

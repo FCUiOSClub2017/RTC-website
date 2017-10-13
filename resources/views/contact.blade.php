@@ -1,4 +1,4 @@
-@extends("layouts.".((request()->ajax())?'axios':'rtc')) @section('content') 
+@extends("layouts.".((request()->ajax())?'axios':'app')) @section('content') 
 
 <!-- Contact Section -->
 <section id="contact">

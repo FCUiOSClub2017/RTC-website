@@ -9,6 +9,7 @@
 // Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "./apple/font.css";
+@import "./freelancer/freelancer";
 
 h1,
 h2,
@@ -22,4 +23,17 @@ ul,
 ol,
 body {
     font-family: "AppleEN","AppleTC-Medium", Arial, sans-serif;
+}
+
+.container-fulid> :first-child {
+    padding-top: 200px;
+}
+
+.collapse.navbar-collapse {
+        max-height: initial;
+        overflow-y: initial;
+    @media(max-width: 767px) {
+    max-height: 75vh;
+    overflow-y: auto;
+    }
 }

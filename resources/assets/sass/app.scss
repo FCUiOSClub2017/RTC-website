@@ -5,25 +5,11 @@
 @import "node_modules/font-awesome/scss/font-awesome";
 
 // Variables
-// @import "variables";
+@import "variables";
 // Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "./apple/font.css";
 @import "./freelancer/freelancer";
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-p,
-ul,
-ol,
-body {
-    font-family: "AppleEN","AppleTC-Medium", Arial, sans-serif;
-}
 
 .container-fulid> :first-child {
     padding-top: 200px;

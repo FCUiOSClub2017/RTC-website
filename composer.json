@@ -10,9 +10,11 @@
         "laravel/tinker": "~1.0"
     },
     "require-dev": {
+        "barryvdh/laravel-ide-helper": "^2.4",
+        "doctrine/dbal": "^2.6",
         "fzaninotto/faker": "~1.4",
+        "miroc/laravel-adminer": "^4.3",
         "mockery/mockery": "0.9.*",
-        "doctrine/dbal": "*",
         "phpunit/phpunit": "*"
     },
     "autoload": {
@@ -42,6 +44,8 @@
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "php artisan ide-helper:generate",
+            "php artisan ide-helper:meta",
             "php artisan optimize"
         ]
     },

@@ -45,10 +45,10 @@
         });
 
     }
+
     function Load_with_axios($this) {
-        console.log($($this).data('href'), window.location.href)
         if ($($this).data('href') + '/' != window.location.href) {
-            console.log('false')
+            event.preventDefault();
             axios.get($($this).data('href'))
                 .then(function(response) {
                     $("html, body").stop().animate({ scrollTop: 0 }, 350, 'swing');
@@ -68,14 +68,23 @@
                     window.history.pushState(response.data, "", $($this).data('href'));
                 })
                 .catch(function(error) {});
-            event.preventDefault();
             return false;
         } else if ($this.hash) {
             var target = $($this.hash);
             target = target.length ? target : $('[name=' + $this.hash.slice(1) + ']');
             if (target.length) {
-                $('html, body').animate({
+                event.preventDefault();
+                $('html, body').stop().animate({
                     scrollTop: (target.offset().top - 48)
+                }, 1000, "easeInOutExpo");
+                return false;
+            }
+        } else {
+            var target = $($this.href.replace(window.location.href, ''));
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: (target.first().offset().top - 48)
                 }, 1000, "easeInOutExpo");
                 return false;
             }
@@ -159,6 +168,6 @@
     module.exports = {
         contact_me: contact_me,
         run: run,
-        Load_with_axios:Load_with_axios
+        Load_with_axios: Load_with_axios
     }
 })(jQuery); // End of use strict

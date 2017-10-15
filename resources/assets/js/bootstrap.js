@@ -7,7 +7,8 @@ window._ = require('lodash');
  */
 try {
     window.$ = window.jQuery = require('jquery');
-    window.RTC = require('./rtc/freelancer');
+    window.RTC = require('./freelancer');
+    window.RTCAdmin = require('./admin');
     window.Popper = require('../../../node_modules/popper.js/dist/umd/popper.js');
     window.Swipe = require('./Swipe.js');
     require('bootstrap');

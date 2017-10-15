@@ -32,7 +32,12 @@
     <script src="js/app.js"></script>
     <script>
     RTC.run();
-
+            // var $navheight = $("#mainNav").height();
+            // var $navpadding = $("#mainNav").css('padding-top').replace('px', '') * 2;
+            // var $el = $('#content section');
+            // if ($el.length) {
+            //     $el.first().css('padding-top', $navheight + $navpadding);
+            // }
     function Load_with_axios($this) {
         if ($($this).data('href') + '/' != window.location.href) {
             event.preventDefault();

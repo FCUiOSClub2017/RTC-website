@@ -15,16 +15,16 @@
         });
         //*/
         // Collapse the navbar when page is scrolled
-        $(window).scroll(function() {
-            if ($("#mainNav").offset().top > 100) {
-                $("#mainNav").addClass("navbar-shrink");
-            } else {
-                $("#mainNav").removeClass("navbar-shrink");
-            }
-        });
+        // $(window).scroll(function() {
+        //     if ($("#mainNav").offset().top > 100) {
+        //         $("#mainNav").addClass("navbar-shrink");
+        //     } else {
+        //         $("#mainNav").removeClass("navbar-shrink");
+        //     }
+        // });
         //*/
 
-        // Floating label headings for the contact form
+
         $(function() {
             $("body").on("input propertychange", ".floating-label-form-group", function(e) {
                 $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
@@ -43,7 +43,19 @@
                 }
             }
         });
+        $(window).resize(function(event) {
+            resize()
+        });
+        resize()
+    }
 
+    function resize() {
+        var $navheight = $("#mainNav").height();
+        var $navpadding = $("#mainNav").css('padding-top').replace('px', '') * 2;
+        var $el = $('#content section');
+        if ($el.length>0) {
+            $el.first().css('padding-top', $navheight + $navpadding);
+        }
     }
 
     function Load_with_axios($this) {

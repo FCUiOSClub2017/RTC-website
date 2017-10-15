@@ -16,8 +16,9 @@ a.active,
 a:active,
 a:focus,
 a:hover {
-  color: $theme-success;
+  // color: $theme-success;
   outline: none;
+  text-decoration: none;
 }
 
 h1,

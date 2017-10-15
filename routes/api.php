@@ -13,34 +13,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
-// Route::get('deploy', function()
-// {
-//     ini_set('max_execution_time', 300);
-//     $cmd = 'cd /var/www;composer dump-autoload -o;composer install;php artisan --version';
-//     exec($cmd, $output, $return);
-//     if ($return !== 0) {
-//         return response($output,500);
-//         // abort(500,$output);
-//     }
-//     return $output;
-// });
-
-// Route::post('composer', function()
-// {
-//     ini_set('max_execution_time', 300);
-//     $cmd = 'cd /var/www;composer selfupdate && composer update';
-//     exec($cmd, $output, $return);
-//     if ($return !== 0) {
-//         return response($output,500);
-//         // abort(500,$output);
-//     }
-//     return $output;
-// });
-
 Route::post('deploy', function()
 {
     ini_set('max_execution_time', 300);

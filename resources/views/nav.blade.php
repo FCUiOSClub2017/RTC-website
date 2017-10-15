@@ -50,7 +50,7 @@
 </nav> --}}
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" data-href="{{route('rtc.home')}}" onclick="Load_with_axios(this)" href="#header">Start Bootstrap</a>
+        <a class="navbar-brand" data-href="{{route('home')}}" onclick="RTC.Load_with_axios(this)" href="#header">Start Bootstrap</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="fa fa-bars"></i>
@@ -58,20 +58,20 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" data-href="{{route('rtc.home')}}" onclick="Load_with_axios(this)" href="#header">Home</a>
+                    <a class="nav-link" data-href="{{route('home')}}" onclick="RTC.Load_with_axios(this)" href="#header">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-href="{{route('rtc.home')}}" onclick="Load_with_axios(this)" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" data-href="{{route('home')}}" onclick="RTC.Load_with_axios(this)" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">More</a>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" onclick="Load_with_axios(this)" href="#about" data-href="{{route('rtc.about')}}">About</a>
-                        <a class="dropdown-item" onclick="Load_with_axios(this)" href="#contact" data-href="{{route('rtc.contact')}}">Contact</a>
+                        <a class="dropdown-item" onclick="RTC.Load_with_axios(this)" href="#about" data-href="{{route('about')}}">About</a>
+                        <a class="dropdown-item" onclick="RTC.Load_with_axios(this)" href="#contact" data-href="{{route('contact')}}">Contact</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('iosclub.home')}}">Ios Club</a>
+                    <a class="nav-link" href="route('iosclub.home')">Ios Club</a>
                 </li>
 
             </ul>

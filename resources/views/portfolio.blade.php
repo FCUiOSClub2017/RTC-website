@@ -1,4 +1,5 @@
-@extends("layouts.".((request()->ajax())?'axios':'rtc')) @section('content') @include('rtc.header')
+@extends("layouts.".((request()->ajax())?'axios':'app')) @section('content')
+<!-- Portfolio Grid Section -->
 <section id="portfolio">
     <div class="container">
         <h2 class="text-center">Portfolio</h2>
@@ -67,7 +68,8 @@
         </div>
     </div>
 </section>
-@endsection @section('hidden-content') @parent
+@endsection @section('hidden-content')
+@parent
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
 <!-- Portfolio Modals -->
 <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -334,4 +336,4 @@
         </div>
     </div>
 </div>
-@endsection 
+@endsection

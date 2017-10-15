@@ -5,17 +5,14 @@ window._ = require('lodash');
  * for JavaScript based Bootstrap features such as modals and tabs. This
  * code may be modified to fit the specific needs of your application.
  */
-
-if (window.jQuery) {
+try {
+    window.$ = window.jQuery = require('jquery');
+    window.RTC = require('./rtc/freelancer');
     window.Popper = require('../../../node_modules/popper.js/dist/umd/popper.js');
     window.Swipe = require('./Swipe.js');
     require('bootstrap');
     require('../../../node_modules/jquery.easing/jquery.easing.1.3.js');
     require('./jqBootstrapValidation.js');
-    // require('../../../node_modules/jquery.stellar/jquery.stellar.js');
-    // window.Stellar = require('./guardian/jquery.stellar.min');
-    require('./guardian/jquery.waypoints.min.js');
-    require('./guardian/hoverIntent.js');
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -30,42 +27,8 @@ if (window.jQuery) {
             return false;
         }
     });
-
-
-    // $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').click(function() {
-    //     $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().removeAttr('class')
-    //     if (!$(this).parent().hasClass('active')) {
-    //         $(this).parent().addClass('active')
-    //     }
-    //     // if ($(this).parent().hasClass('sfHover')) {
-    //     //     $(this).parent().removeClass('sfHover')
-    //     // }
-    //     // console.log($(this).parent())
-    // });
-
-    $(window).scroll(function(event) {
-        var fromTop = $(this).scrollTop() + 61;
-        var id = $('[id^="fh5co-"][id$="-section"]').map(function() {
-            if ($(this).offset().top < fromTop)
-                return this;
-        }).last()[0].id;
-        if (id) {
-            if (id == 'fh5co-header-section') {
-                id = 'app'
-            }
-            $("a.js-scroll-trigger-active").parent().removeClass("active")
-            if (!$("a.js-scroll-trigger-active[href='#" + id + "']").parent().hasClass("active")) {
-                $("a.js-scroll-trigger-active[href='#" + id + "']").parent().addClass("active");
-                if ($('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().hasClass('sfHover')) {
-                $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().removeClass('sfHover')}
-                if ($(this).parent().hasClass('sfHover')) {
-                    $(this).parent().removeClass('sfHover')
-                }
-            }
-        }
-
-    });
-
+} catch (e) {
+    console.log(e);
 }
 
 

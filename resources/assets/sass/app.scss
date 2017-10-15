@@ -1,39 +1,38 @@
-// Fonts
-// @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+//.Fonts
+//.@import.url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 // @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 // @import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic");
 @import "node_modules/font-awesome/scss/font-awesome";
 
 // Variables
-// @import "variables";
+@import "variables";
 // Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "./apple/font.css";
 @import "./freelancer/freelancer";
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-p,
-ul,
-ol,
-body {
-    font-family: "AppleEN","AppleTC-Medium", Arial, sans-serif;
-}
-
 .container-fulid> :first-child {
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 .collapse.navbar-collapse {
-        max-height: initial;
-        overflow-y: initial;
+    max-height: initial;
+    overflow-y: initial;
     @media(max-width: 767px) {
-    max-height: 75vh;
-    overflow-y: auto;
+        max-height: 75vh;
+        overflow-y: auto;
+    }
+}
+
+.navbar {
+    @media (min-width: 992px) {
+        .navbar-brand img {
+            transform: scale(1.5);
+            transform-origin: 0% 50%;
+            transition: all .3s;
+        }
+        &.navbar-shrink .navbar-brand img {
+            transform: scale(1.3);
+        }
     }
 }

@@ -7,37 +7,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="csrf-token" content="{{csrf_token()}}">
     <title>{{$title}}</title>
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
 </head>
 
 <body>
     <div id="app">
         <!-- Page NavBar -->
-        @include('nav')
+        @include('components.nav')
         <div class="container-fulid" id="content">
-            <!-- Page Header -->
-            @yield('header')
             <!-- Page Content -->
             @yield('content')
         </div>
         <!-- Footer -->
-        @include('footer') @yield('footer')
+        @include('components.footer')
     </div>
     <!-- Hidden -->
     <div class="scroll-top d-lg-none">
-        <a class="btn btn-primary js-scroll-trigger" href="#page-top">
+        <a class="btn btn-primary js-scroll-trigger" href="#content">
         <i class="fa fa-chevron-up"></i>
       </a>
     </div>
     @yield('hidden-content')
     <!-- Bootstrap core JavaScript -->
-    <script src="{{asset('js/app.js')}}"></script>
+    <script src="js/app.js"></script>
     <script>
     RTC.run();
+
     function Load_with_axios($this) {
-        console.log($($this).data('href'), window.location.href)
         if ($($this).data('href') + '/' != window.location.href) {
-            console.log('false')
+            event.preventDefault();
             axios.get($($this).data('href'))
                 .then(function(response) {
                     $("html, body").stop().animate({ scrollTop: 0 }, 350, 'swing');
@@ -57,14 +55,23 @@
                     window.history.pushState(response.data, "", $($this).data('href'));
                 })
                 .catch(function(error) {});
-            event.preventDefault();
             return false;
         } else if ($this.hash) {
             var target = $($this.hash);
             target = target.length ? target : $('[name=' + $this.hash.slice(1) + ']');
             if (target.length) {
-                $('html, body').animate({
+                event.preventDefault();
+                $('html, body').stop().animate({
                     scrollTop: (target.offset().top - 48)
+                }, 1000, "easeInOutExpo");
+                return false;
+            }
+        } else {
+            var target = $($this.href.replace(window.location.href, ''));
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: (target.first().offset().top - 48)
                 }, 1000, "easeInOutExpo");
                 return false;
             }

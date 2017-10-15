@@ -1,8 +1,8 @@
 <?php 
-                $carousel = Storage::files('carousel'); 
-                $active = rand(1,count($carousel)); 
-            ?>
-<section id="contact">
+    $carousel = Storage::files('carousel'); 
+    $active = rand(1,count($carousel)); 
+?>
+<section id="contact" style="padding-top: 75px">
     <div class="carousel slide" data-ride="carousel" id="carousel">
         <div class="carousel-inner">
             @foreach ($carousel as $element)

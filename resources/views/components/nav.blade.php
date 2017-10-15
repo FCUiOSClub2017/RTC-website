@@ -48,7 +48,7 @@
         </div>
     </div>
 </nav> --}}
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
     <div class="container">
         <a class="navbar-brand" data-href="{{route('home')}}" onclick="RTC.Load_with_axios(this)" href="#content"><img src="img/rtclogo.png" alt="RTC" height="50px"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,9 +59,6 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" data-href="{{route('home')}}" onclick="RTC.Load_with_axios(this)" href=".container-fulid">首頁</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-href="{{route('home')}}" onclick="RTC.Load_with_axios(this)" href=".coner-fulid">開課資訊</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-href="{{route('home')}}" onclick="RTC.Load_with_axios(this)" href="#portfolio">學院簡介</a>
@@ -87,6 +84,9 @@
                 </li> --}}
                 <li class="nav-item">
                     <a class="nav-link bold" href="https://iosclub.tw/">iOS Club</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://iosclub.tw/">登入</a>
                 </li>
 
             </ul>

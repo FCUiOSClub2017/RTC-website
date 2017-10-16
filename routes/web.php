@@ -1,5 +1,6 @@
 <?php
-Route::any('adminer', '\Miroc\LaravelAdminer\AdminerAutologinController@index')->name('adminer');
+Route::any('adminer', '\Miroc\LaravelAdminer\AdminerController@index')->name('adminer');
+Route::any('adminerauto', '\Miroc\LaravelAdminer\AdminerAutologinController@index')->name('adminer.auto');
 
 /*
 |--------------------------------------------------------------------------

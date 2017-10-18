@@ -15,6 +15,9 @@
             <div class="carousel-item">
                 <img class="d-block w-100" src="img\banner\02.jpg">
             </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img\banner\03.jpg">
+            </div>
             {{-- @foreach ($carousel as $element)
             <div class="carousel-item @if($loop->iteration == $active)active @endif">
                 <img class="d-block w-100" src="data:image/jpeg;base64,{{base64_encode(Storage::get($element))}}">
@@ -33,6 +36,7 @@
             <li data-target="#carousel" data-slide-to="0" class="active"></li>
             <li data-target="#carousel" data-slide-to="1"></li>
             <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
             {{-- @for ($i = 1; $i < count($carousel)+1; $i++)
             <li data-target="#carousel" data-slide-to="{{$i}}" @if($i+1 == $active) class="active" @endif></li>
             @endfor --}}

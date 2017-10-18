@@ -22,7 +22,7 @@
             transition: all .3s;
         }
         &.navbar-shrink .navbar-brand img {
-            transform: scale(1.2);
+            transform: scale(0.9);
         }
     }
 }
@@ -31,13 +31,13 @@
     max-height: initial;
     overflow-y: initial;
     @media(max-width: 767px) {
-        max-height: calc(100vh - 75.6px);
+        max-height: calc(100vh - 65.6px);
         overflow-y: auto;
     }
 }
 
 .dropdown-menu {
-    max-height: calc(100vh - 75.6px);
+    max-height: calc(100vh - 65.6px);
     overflow-y: auto;
     @media(max-width: 767px) {
         max-height: initial;
@@ -47,6 +47,6 @@
 
 #content > section:first-child {
     @media (max-width: 991px) {
-        padding-top:75.59px !important;
+        padding-top:65.59px !important;
     }
 }

@@ -32,14 +32,14 @@
     <script src="js/app.js"></script>
     <script>
     RTC.run();
-            // var $navheight = $("#mainNav").height();
-            // var $navpadding = $("#mainNav").css('padding-top').replace('px', '') * 2;
-            // var $el = $('#content section');
-            // if ($el.length) {
-            //     $el.first().css('padding-top', $navheight + $navpadding);
-            // }
+    // var $navheight = $("#mainNav").height();
+    // var $navpadding = $("#mainNav").css('padding-top').replace('px', '') * 2;
+    // var $el = $('#content section');
+    // if ($el.length) {
+    //     $el.first().css('padding-top', $navheight + $navpadding);
+    // }
     function Load_with_axios($this) {
-        if ($($this).data('href') + '/' != window.location.href) {
+        if ($($this).data('href') + '/' != window.location.href && $($this).data('href') != window.location.href) {
             event.preventDefault();
             axios.get($($this).data('href'))
                 .then(function(response) {
@@ -67,7 +67,7 @@
             if (target.length) {
                 event.preventDefault();
                 $('html, body').stop().animate({
-                    scrollTop: (target.offset().top - 48)
+                    scrollTop: (target.offset().top - $('#content').css('padding-top').replace('px', ''))
                 }, 1000, "easeInOutExpo");
                 return false;
             }
@@ -76,7 +76,7 @@
             if (target.length) {
                 event.preventDefault();
                 $('html, body').stop().animate({
-                    scrollTop: (target.first().offset().top - 48)
+                    scrollTop: (target.first().offset().top - $('#content').css('padding-top').replace('px', ''))
                 }, 1000, "easeInOutExpo");
                 return false;
             }
@@ -86,7 +86,11 @@
         if (e.state) {
             document.getElementById("content").innerHTML = e.state.html;
             document.getElementsByTagName("title").innerHTML = e.state.title;
+            $('.nav-link').removeClass('active')
+            $('[href$="#'+e.state.nav+'"]').addClass('active')
         }
+        else
+            window.location.href = window.location.href;
     };
     </script>
     @yield('addon-script')

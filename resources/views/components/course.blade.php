@@ -1,7 +1,7 @@
 @section('content')
 @parent
 <!-- Portfolio Grid Section -->
-<section id="portfolio">
+<section id="portfolio" class="portfolio">
     <div class="container">
         <h2 class="text-center">Portfolio</h2>
         <hr class="star-primary">

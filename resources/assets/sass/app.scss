@@ -12,7 +12,7 @@
 @import "./freelancer/freelancer";
 
 // #content > :first-child {
-//     padding-top: 75px;
+//     padding-top: 0;
 // }
 .navbar {
     @media (min-width: 992px) {
@@ -31,7 +31,7 @@
     max-height: initial;
     overflow-y: initial;
     @media(max-width: 767px) {
-        max-height: calc(100vh - 65.6px);
+        max-height: calc(100vh - 75.59px);
         overflow-y: auto;
     }
 }
@@ -45,8 +45,31 @@
     }
 }
 
-#content > section:first-child {
-    @media (max-width: 991px) {
-        padding-top:65.59px !important;
+.portfolio-item {
+    .portfolio-link {
+        .user-name {
+            z-index: 1;
+            color: #333;
+            writing-mode: tb-rl;
+            right: 0;
+            top: 50%;
+            position: absolute;
+            transform: translateY(-50%);
+            height: 100%;
+            text-align: center;
+        }
+        .img-fluid.user {
+            border-radius: 100%;
+            transform: scale(0.95);
+            @media(min-width: $grid-breakpoints-md) {
+                transform: scale(0.7);
+            }
+            @media(min-width: $grid-breakpoints-lg) {
+                transform: scale(0.95);
+            }
+            @media(min-width: $grid-breakpoints-xl) {
+                transform: scale(0.8);
+            }
+        }
     }
 }

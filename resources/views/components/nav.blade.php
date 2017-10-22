@@ -58,22 +58,22 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" data-href="{{route('home')}}" onclick="RTC.Load_with_axios(this)" href=".container-fulid">首頁</a>
+                    <a class="nav-link" data-href="{{route('home')}}" onclick="RTC.Load_with_axios(this)" href="#home">首頁</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-href="{{route('home')}}" onclick="RTC.Load_with_axios(this)" href="#portfolio">簡介</a>
+                    <a class="nav-link" data-href="{{route('intro')}}" onclick="RTC.Load_with_axios(this)" href="#intro">介绍</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-href="{{route('home')}}" onclick="RTC.Load_with_axios(this)" href="#portfolio">師資介紹</a>
+                    <a class="nav-link" data-href="{{route('teacher')}}" onclick="RTC.Load_with_axios(this)" href="#teacher">教學團隊</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-href="{{route('home')}}" onclick="RTC.Load_with_axios(this)" href="#portfolio">空間使用須知</a>
+                    <a class="nav-link" data-href="{{route('rule')}}" onclick="RTC.Load_with_axios(this)" href="#rule">空間使用須知</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://iosclub.tw/">聯絡辦公室</a>
+                    <a class="nav-link" data-href="{{route('contact')}}" onclick="RTC.Load_with_axios(this)" href="#contact">聯絡辦公室</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://iosclub.tw/">Facebook粉絲專頁</a>
+                    <a class="nav-link" href="https://www.facebook.com/FCURTC/">Facebook粉絲專頁</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link bold" href="https://iosclub.tw/">iOS Club</a>

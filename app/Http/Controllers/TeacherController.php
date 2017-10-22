@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class TeacherController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -25,10 +25,10 @@ class HomeController extends Controller
     {
         if (request()->ajax()) return 
             response()->json([
-                'html'=>view('home')->with(['title'=>'逢甲RTC蘋果教育訓練中心'])->render(),
-                'title'=>'逢甲RTC蘋果教育訓練中心',
-                'nav'=>'home',
+                'html'=>view('teacher')->with(['title'=>'教學團隊'])->render(),
+                'title'=>'教學團隊',
+                'nav'=>'teacher',
             ]);
-        return view('home')->with(['title'=>'逢甲RTC蘋果教育訓練中心']);
+        return view('teacher')->with(['title'=>'教學團隊']);
     }
 }

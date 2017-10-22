@@ -1,7 +1,7 @@
 @extends("layouts.".((request()->ajax())?'axios':'app')) @section('content')
 
 <!-- About Section -->
-<section class="success" id="about">
+<section class="success" id="intro">
     <div class="container">
         <h2 class="text-center">About</h2>
         <hr class="star-light">

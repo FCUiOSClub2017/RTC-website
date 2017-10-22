@@ -16,15 +16,12 @@ Route::any('adminer', '\Miroc\LaravelAdminer\AdminerController@index')->name('ad
 // Route::domain('club.ahkui.com')->group($clubroute);
 // Route::domain('club.ahkui.com:99')->group($clubroute);
 
-Route::get('/', function () {
-    if (request()->ajax()) return 
-        response()->json([
-            'html'=>view('home')->with(['title'=>'Home'])->render(),
-            'title'=>'Home'
-        ]);
-    return view('home')->with(['title'=>'home']);
-})->name('home');
-
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/intro', 'IntroductionController@index')->name('intro');
+Route::get('/teacher', 'TeacherController@index')->name('teacher');
+Route::get('/rule', 'RuleController@index')->name('rule');
+Route::get('/contact', 'ContactController@index')->name('contact');
+/*
 Route::get('about', function () {
     if (request()->ajax()) return 
         response()->json([

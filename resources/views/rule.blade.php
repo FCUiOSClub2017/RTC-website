@@ -1,0 +1,1 @@
+@extends("layouts.".((request()->ajax())?'axios':'app')) @section('content') @endsection

@@ -4,7 +4,7 @@
     <div class="container">
         <h2 class="text-center">教學團隊</h2>
         <hr class="star-primary">
-        <div class="row">
+        <div class="row justify-content-around">
             <div class="col-md-6 col-xl-4 portfolio-item">
                 <a class="portfolio-link" href="#xfr" data-toggle="modal">
                     <div class="caption">
@@ -43,27 +43,27 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>許芳榮 主任</h2>
                             <hr class="star-primary">
-                            <img class="img-fluid img-centered" src="img/portfolio/cabin.png" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                                <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img class="img-fluid user" src="img/a.png" alt="" width="80%" style="margin:0 10%;">
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                      </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>
-                        <a href="http://startbootstrap.com">April 2014</a>
-                      </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>
-                        <a href="http://startbootstrap.com">Web Development</a>
-                      </strong>
-                                </li>
+                                <li><h3><strong>專長</strong></h3></li>
+                                <li><a>演算法 Algorithms</a></li>
+                                <li><a>資料探勘 Data Mining</a></li>
+                                <li><a>生物資訊 Bioinformatics</a></li>
+                                <li><a>平行處理 Parallel Processing</a></li>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                                <li><h3><strong>聯絡</strong></h3></li>
+                                <li><i class="fa fa-fw fa-envelope-o text-primary"></i> frhsu@fcu.edu.tw</li>
+                                <li><i class="fa fa-fw fa-flask text-primary"></i> 生物資訊實驗室(資電244) </li>
+                                <li><i class="fa fa-fw fa-mobile text-primary"></i> 04-24517250 轉 3700 / 04-24517250 轉 3755 </li>
+                                <li><i class="fa fa-fw fa-map-marker text-primary"></i> 台中市西屯區文華路100號 逢甲大學 資電201 / 資電308-5</li>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                                <li><h3><strong>學歷</strong></h3></li>
+                                <li><a>國立交通大學 資訊工程研究所  博士學位</a></li>
+                                <li><a>國立交通大學 計算機工程系 學士學位</a></li>
                             </ul>
                             <button class="btn btn-success" type="button" data-dismiss="modal">
                                 <i class="fa fa-times"></i> Close
@@ -75,6 +75,12 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+
 <div class="portfolio-modal modal fade" id="yjq" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -87,27 +93,28 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>英家慶 助理教授</h2>
                             <hr class="star-primary">
-                            <img class="img-fluid img-centered" src="img/portfolio/cake.png" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                                <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img class="img-fluid user" src="img/b.png" alt="" width="80%" style="margin:0 10%;">
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                      </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>
-                        <a href="http://startbootstrap.com">April 2014</a>
-                      </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>
-                        <a href="http://startbootstrap.com">Web Development</a>
-                      </strong>
-                                </li>
+                                <li><h3><strong>專長</strong></h3></li>
+                                <li><a>資料探勘 Data Mining</a></li>
+                                <li><a>深度學習 Deep Learning</a></li>
+                                <li><a>雲端運算 Cloud Computing</a></li>
+                                <li><a>機器學習 Machine Learning</a></li>
+                                <li><a>巨量資料分析 Big Data Analytics</a></li>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                                <li><h3><strong>聯絡</strong></h3></li>
+                                <li><i class="fa fa-fw fa-envelope-o text-primary"></i> jcying@fcu.edu.tw</li>
+                                <li><i class="fa fa-fw fa-mobile text-primary"></i> 04-24517250 轉 3756</li>
+                                <li><i class="fa fa-fw fa-map-marker text-primary"></i> 台中市西屯區文華路100號 逢甲大學 資電241</li>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                                <li><h3><strong>學歷</strong></h3></li>
+                                <li><a>成功大學 資訊工程所 博士學位</a></li>
+                                <li><a>銘傳大學 資訊傳播工程學系 碩士學位</a></li>
+                                <li><a>中原大學 數學系 學士學位</a></li>
                             </ul>
                             <button class="btn btn-success" type="button" data-dismiss="modal">
                                 <i class="fa fa-times"></i> Close

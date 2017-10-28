@@ -2,5 +2,6 @@
 <div id="home">
     @include('components.carousel') 
 @include('components.course')
+@include('components.teacher')
 </div>
 @endsection 

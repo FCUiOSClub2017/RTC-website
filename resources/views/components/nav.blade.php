@@ -50,7 +50,7 @@
 </nav> --}}
 <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" {{-- data-href="{{route('home')}}" --}} onclick="RTC.Load_with_axios(this)" href="#content"><img src="img/rtclogo.png" alt="RTC" height="50px"></a>
+        <a class="navbar-brand" data-href="{{route('home')}}" onclick="Load_with_axios(this)" href="#home"><img src="img/rtclogo.png" alt="RTC" height="50px"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="fa fa-bars"></i>
@@ -58,32 +58,32 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" data-href="{{route('home')}}" onclick="RTC.Load_with_axios(this)" href="#home">首頁</a>
+                    <a class="nav-link" data-href="{{route('home')}}" onclick="Load_with_axios(this)" href="#home">首頁</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-href="{{route('intro')}}" onclick="RTC.Load_with_axios(this)" href="#intro">介绍</a>
+                    <a class="nav-link" data-href="{{route('intro')}}" onclick="Load_with_axios(this)" href="#intro">介绍</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-href="{{route('teacher')}}" onclick="RTC.Load_with_axios(this)" href="#teacher">教學團隊</a>
+                    <a class="nav-link" data-href="{{route('teacher')}}" onclick="Load_with_axios(this)" href="#teacher">教學團隊</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-href="{{route('rule')}}" onclick="RTC.Load_with_axios(this)" href="#rule">空間使用須知</a>
+                    <a class="nav-link" data-href="{{route('rule')}}" onclick="Load_with_axios(this)" href="#rule">空間使用須知</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-href="{{route('contact')}}" onclick="RTC.Load_with_axios(this)" href="#contact">聯絡辦公室</a>
+                    <a class="nav-link" data-href="{{route('contact')}}" onclick="Load_with_axios(this)" href="#contact">聯絡辦公室</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.facebook.com/FCURTC/">Facebook粉絲專頁</a>
+                    <a class="nav-link" href="https://www.facebook.com/FCURTC/" onclick="window.open(this.href);return false;">Facebook粉絲專頁</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link bold" href="https://iosclub.tw/">iOS Club</a>
+                    <a class="nav-link bold" href="https://iosclub.tw/" onclick="window.open(this.href);return false;">iOS Club</a>
                 </li>
                 {{--
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">More</a>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" onclick="RTC.Load_with_axios(this)" href="#about" data-href="{{route('about')}}">About</a>
-                        <a class="dropdown-item" onclick="RTC.Load_with_axios(this)" href="#contact" data-href="{{route('contact')}}">Contact</a>
+                        <a class="dropdown-item" onclick="Load_with_axios(this)" href="#about" data-href="{{route('about')}}">About</a>
+                        <a class="dropdown-item" onclick="Load_with_axios(this)" href="#contact" data-href="{{route('contact')}}">Contact</a>
                     </div>
                 </li> --}}
             </ul>

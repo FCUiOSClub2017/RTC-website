@@ -39,7 +39,17 @@
     //     $el.first().css('padding-top', $navheight + $navpadding);
     // }
     function Load_with_axios($this) {
-        if ($($this).data('href') + '/' != window.location.href && $($this).data('href') != window.location.href) {
+        if ($this.hash && $($this.hash).length > 0) {
+            var target = $($this.hash);
+            target = target.length ? target : $('[name=' + $this.hash.slice(1) + ']');
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: (target.offset().top - $('#content').css('padding-top').replace('px', ''))
+                }, 1000, "easeInOutExpo");
+                return false;
+            }
+        } else if ($($this).data('href') + '/' != window.location.href && $($this).data('href') != window.location.href) {
             event.preventDefault();
             axios.get($($this).data('href'))
                 .then(function(response) {
@@ -61,16 +71,6 @@
                 })
                 .catch(function(error) {});
             return false;
-        } else if ($this.hash) {
-            var target = $($this.hash);
-            target = target.length ? target : $('[name=' + $this.hash.slice(1) + ']');
-            if (target.length) {
-                event.preventDefault();
-                $('html, body').stop().animate({
-                    scrollTop: (target.offset().top - $('#content').css('padding-top').replace('px', ''))
-                }, 1000, "easeInOutExpo");
-                return false;
-            }
         } else {
             var target = $($this.href.replace(window.location.href, ''));
             if (target.length) {
@@ -82,16 +82,18 @@
             }
         }
     }
-    window.onpopstate = function(e) {
-        if (e.state) {
-            document.getElementById("content").innerHTML = e.state.html;
-            document.getElementsByTagName("title").innerHTML = e.state.title;
-            $('.nav-link').removeClass('active')
-            $('[href$="#'+e.state.nav+'"]').addClass('active')
-        }
-        else
-            window.location.href = window.location.href;
-    };
+    (function a() {
+        window.onpopstate = function(e) {
+            if (e.state && document.getElementById("content").length > 0) {
+                document.getElementById("content").innerHTML = e.state.html;
+                document.getElementsByTagName("title").innerHTML = e.state.title;
+                $('.nav-link').removeClass('active')
+                $('[href$="#'+e.state.nav+'"]').addClass('active')
+            }
+            else
+                window.location.href = window.location.href;
+        };
+    })();
     </script>
     @yield('addon-script')
 </body>

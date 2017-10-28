@@ -2,7 +2,7 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img class="d-block w-100" src="img\banner\00.jpg">
-        </div>{{-- 
+        </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="img\banner\01.jpg">
         </div>
@@ -11,9 +11,9 @@
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="img\banner\03.jpg">
-        </div> --}}
+        </div>
     </div>
-    {{-- <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
@@ -26,5 +26,5 @@
         <li data-target="#carousel" data-slide-to="1"></li>
         <li data-target="#carousel" data-slide-to="2"></li>
         <li data-target="#carousel" data-slide-to="3"></li>
-    </ol> --}}
+    </ol>
 </div>

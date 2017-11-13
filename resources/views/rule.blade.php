@@ -1,5 +1,5 @@
 @extends("layouts.".((request()->ajax())?'axios':'app')) @section('content')
-<section class="content-editor" id="intro">
+<section class="content-editor" id="rule">
   <div class="container">
     <div class="row">
       <div class="col">

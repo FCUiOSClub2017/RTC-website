@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
 
     /**
@@ -23,6 +23,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        if (request()->ajax()) return 
+            response()->json([
+                'html'=>view('home')->with(['title'=>'逢甲RTC蘋果教育訓練中心'])->render(),
+                'title'=>'逢甲RTC蘋果教育訓練中心',
+                'nav'=>'home',
+            ]);
+        return view('home')->with(['title'=>'逢甲RTC蘋果教育訓練中心']);
     }
 }

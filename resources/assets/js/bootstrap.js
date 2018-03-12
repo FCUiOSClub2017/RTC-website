@@ -5,40 +5,31 @@ window._ = require('lodash');
  * for JavaScript based Bootstrap features such as modals and tabs. This
  * code may be modified to fit the specific needs of your application.
  */
-
-if (window.jQuery) {
+try {
+    window.$ = window.jQuery = require('jquery');
+    window.RTC = require('./freelancer');
+    window.RTCAdmin = require('./admin');
     window.Popper = require('../../../node_modules/popper.js/dist/umd/popper.js');
+    window.Swipe = require('./Swipe.js');
     require('bootstrap');
     require('../../../node_modules/jquery.easing/jquery.easing.1.3.js');
     require('./jqBootstrapValidation.js');
-    // require('../../../node_modules/jquery.stellar/jquery.stellar.js');
-    // window.Stellar = require('./guardian/jquery.stellar.min');
-    require('./guardian/jquery.waypoints.min.js');
-    require('./guardian/hoverIntent.js');
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
-            if ($(window).width() > 769) {
-                if ($('body').hasClass('fh5co-offcanvas')) {
-                    $('body').removeClass('fh5co-offcanvas');
-                }
+            console.log(target)
+            if ($('body').hasClass('fh5co-offcanvas')) {
+                $('body').removeClass('fh5co-offcanvas');
             }
             $('html, body').animate({
-                scrollTop: (target.offset().top - 48)
+                scrollTop: (target.offset().top - 60)
             }, 1000, "easeInOutExpo");
-
-
             return false;
         }
     });
-
-
-    $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').click(function() {
-        $('a.js-scroll-trigger-active[href*="#"]:not([href="#"])').parent().removeClass('active')
-        $(this).parent().addClass('active')
-        console.log($(this).parent())
-    });
+} catch (e) {
+    console.log(e);
 }
 
 

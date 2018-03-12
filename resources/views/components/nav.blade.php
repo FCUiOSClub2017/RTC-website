@@ -50,7 +50,7 @@
 </nav> --}}
 <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" data-href="{{route('home')}}" onclick="Load_with_axios(this)" href="#home"><img src="img/rtclogo.png" alt="RTC" height="50px"></a>
+        <a class="navbar-brand" data-href="{{route('home')}}" onclick="Load_with_axios(this)" href="#home"><img src="img/rtclogo.png" alt="RTC" height="39px"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="fa fa-bars"></i>

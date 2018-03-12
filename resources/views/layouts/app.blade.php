@@ -8,6 +8,7 @@
     <meta name="csrf-token" content="{{csrf_token()}}">
     <title>{{$title}}</title>
     <link href="css/app.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/FCU_LOGO.png" />
 </head>
 
 <body>

@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    2016 ~ 2017 <sup>&copy;</sup> 逢甲大學蘋果區域教育培訓中心
+                    2016 ~ 2018 <sup>&copy;</sup> 逢甲大學蘋果區域教育培訓中心
                 </div>
             </div>
         </div>

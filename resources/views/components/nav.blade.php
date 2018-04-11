@@ -58,6 +58,9 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
+                    <a class="nav-link" href="https://rtc-2018.fcu.edu.tw/" onclick="window.open(this.href);return false;">App 競賽</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" data-href="{{URL::secure('home')}}" onclick="Load_with_axios(this)" href="#home">首頁</a>
                 </li>
                 <li class="nav-item">

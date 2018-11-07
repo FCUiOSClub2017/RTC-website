@@ -16,7 +16,7 @@
                     <p class="user-name">許芳榮 主任</p>
                 </a>
             </div>
-            <div class="col-md-6 col-xl-4 portfolio-item">
+            <!--div class="col-md-6 col-xl-4 portfolio-item">
                 <a class="portfolio-link" href="#yjq" data-toggle="modal">
                     <div class="caption">
                         <div class="caption-content">
@@ -26,7 +26,7 @@
                     <img class="img-fluid user" src="img/b.png" alt="">
                     <p class="user-name">英家慶 助理教授</p>
                 </a>
-            </div>
+            </div-->
         </div>
     </div>
 </section>
@@ -81,7 +81,7 @@
 
 
 
-<div class="portfolio-modal modal fade" id="yjq" tabindex="-1" role="dialog" aria-hidden="true">
+<!--div class="portfolio-modal modal fade" id="yjq" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -125,5 +125,5 @@
             </div>
         </div>
     </div>
-</div>
+</div-->
 @endsection

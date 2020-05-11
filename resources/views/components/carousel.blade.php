@@ -13,7 +13,7 @@
             <img class="d-block w-100" src="img\banner\03.jpg">
         </div>
         <div class="carousel-item active">
-            <img class="d-block w-100" src="img\banner\04.jpg" onclick="window.location.href='https://rtc-2019.fcu.edu.tw/'" style="cursor: pointer;">
+            <img class="d-block w-100" src="img\banner\04.png" onclick="window.location.href='https://rtc-2020.fcu.edu.tw/'" style="cursor: pointer;">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">

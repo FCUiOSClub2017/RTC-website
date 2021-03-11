@@ -23,7 +23,7 @@ Vue.component('headerz', require('./components/Header.vue').default)
 Vue.component('footerz', require('./components/Footer.vue').default)
 Vue.component('finalcut', require('./components/FinalCutPro.vue').default)
 Vue.component('garageband', require('./components/Garageband.vue').default)
-Vue.component('imove', require('./components/LogicPro.vue').default)
+Vue.component('imove', require('./components/Imove.vue').default)
 Vue.component('logicpro', require('./components/LogicPro.vue').default)
 
 /**

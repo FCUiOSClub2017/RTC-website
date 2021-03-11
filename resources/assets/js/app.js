@@ -15,7 +15,7 @@ import headerz from './components/Header.vue';
 import footerz from './components/Footer.vue';
 import finalcut from './components/FinalCutPro.vue';
 import garageband from './components/Garageband.vue';
-import imove from './components/LogicPro.vue';
+import imove from './components/Imove.vue';
 import logicpro from './components/LogicPro.vue';
 
 Vue.component('home', require('./components/Home.vue').default)

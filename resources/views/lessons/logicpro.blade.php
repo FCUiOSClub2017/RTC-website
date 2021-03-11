@@ -11,8 +11,3 @@
 
 </html>
 <script src="{{ mix('js/app.js') }}"></script>
-<style>
-    footer {
-        color: black
-    }
-</style>

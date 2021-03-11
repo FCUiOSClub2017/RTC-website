@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<link href="css/app.css" rel="stylesheet">
+<link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
     <div id="app">
         <headerz></headerz>
@@ -9,4 +9,4 @@
 
 
 </html>
-<script src="/js/app.js"></script>
+<script src="{{ mix('js/app.js') }}"></script>

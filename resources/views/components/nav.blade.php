@@ -69,7 +69,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-href="{{URL::secure('home')}}" onclick="Load_with_axios(this)" href="#home">首頁</a>
+                    <a class="nav-link" data-href="{{URL::secure('home')}}" onclick="Load_with_axios(this)" href="{{ route('home')}}">首頁</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-href="{{URL::secure('intro')}}" onclick="Load_with_axios(this)" href="#intro">介绍</a>
@@ -82,6 +82,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-href="{{URL::secure('contact')}}" onclick="Load_with_axios(this)" href="#contact">聯絡辦公室</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('lesson.index')}}">推廣處課程</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://www.facebook.com/FCURTC/" onclick="window.open(this.href);return false;">Facebook粉絲專頁</a>

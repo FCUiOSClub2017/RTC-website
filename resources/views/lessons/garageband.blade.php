@@ -2,9 +2,7 @@
 <link href="css/app.css" rel="stylesheet">
 
     <div id="app">
-        <headerz></headerz>
         <garageband></garageband>
-        <footerz></footerz>
     </div>
 
 

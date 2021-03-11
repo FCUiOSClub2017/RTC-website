@@ -23,22 +23,22 @@ class LessonController extends Controller
      */
     public function index()
     {
-        return view('lesson.index');
+        return view('lessons.index');
     }
     public function finalcutIndex()
     {
-        return view('lesson.finalcutpro');
+        return view('lessons.finalcutpro');
     }
     public function garagebandtIndex()
     {
-        return view('lesson.garageband');
+        return view('lessons.garageband');
     }
     public function imoveIndex()
     {
-        return view('lesson.imove');
+        return view('lessons.imove');
     }
     public function logicproIndex()
     {
-        return view('lesson.logicpro');
+        return view('lessons.logicpro');
     }
 }

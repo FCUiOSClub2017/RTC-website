@@ -18,36 +18,36 @@
         </b-row>
         <b-row class="text-center" cols="1" cols-sm="2" cols-md="2" cols-lg="4">
           <b-col class="mb-5">
-            <b-link to="/FinalCutPro">
+            <b-link to="/lesson/finalcutpro">
               <img alt="Vue logo" src="/img/final.png" style="width:150px">
             </b-link>
             <h4 class="my-3">Final Cut Pro <br /><small>影片剪輯操作班</small> </h4>
             <b-button variant="primary" target="_black" href="https://reurl.cc/bzEKAr" class="mr-2">立即報名</b-button>
-            <b-button to="/FinalCutPro">更多介紹</b-button>
+            <b-button to="/lesson/finalcutpro">更多介紹</b-button>
           </b-col>
           <b-col class="mb-5">
-            <b-link to="/Imove">
+            <b-link to="/lesson/imove">
               <img alt="Vue logo" src="/img/im.png" style="width:150px">
             </b-link>
             <h4 class="my-3">iMovie <br /><small>影片剪輯操作班</small> </h4>
             <b-button variant="primary" target="_black" href="https://reurl.cc/bzEKAr" class="mr-2">立即報名</b-button>
-            <b-button to="/Imove">更多介紹</b-button>
+            <b-button to="/lesson/imove">更多介紹</b-button>
           </b-col>
          <b-col class="mb-5">
-            <b-link to="/LogicPro">
+            <b-link to="/lesson/logicpro">
               <img alt="Vue logo" src="/img/lp.png" style="width:150px">
             </b-link>
             <h4 class="my-3">Logic Pro <br /><small>音樂創作班</small> </h4>
             <b-button variant="primary" target="_black" href="https://reurl.cc/bzEKAr" class="mr-2">立即報名</b-button>
-            <b-button to="/LogicPro">更多介紹</b-button>
+            <b-button to="/lesson/logicpro">更多介紹</b-button>
           </b-col>
           <b-col class="mb-5">
-            <b-link to="/Garageband">
+            <b-link to="/lesson/garageband">
               <img alt="Vue logo" src="/img/gb.png" style="width:150px">
             </b-link>
             <h4 class="my-3">Garageband <br /><small>音樂創作班</small> </h4>
             <b-button variant="primary" target="_black" href="https://reurl.cc/bzEKAr" class="mr-2">立即報名</b-button>
-            <b-button to="Garageband">更多介紹</b-button>
+            <b-button to="/lesson/garageband">更多介紹</b-button>
           </b-col>
         </b-row>
       </b-container>

@@ -51,7 +51,7 @@
 </nav> --}}
 <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" data-href="{{URL::secure('home')}}" onclick="Load_with_axios(this)" href="#home"><img src="img/rtclogo.png" alt="RTC" height="39px"></a>
+        <a class="navbar-brand" data-href="{{URL::secure('home')}}" href="{{ route('home')}}"><img src="img/rtclogo.png" alt="RTC" height="39px"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
@@ -68,11 +68,17 @@
                         <a class="dropdown-item" href="https://rtc-2017.fcu.edu.tw">2017 移動應用創新賽</a>
                     </div>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a class="nav-link" data-href="{{URL::secure('home')}}" onclick="Load_with_axios(this)" href="{{ route('home')}}">首頁</a>
-                </li>
-                <li class="nav-item">
+                </li> --}}
+                {{-- <li class="nav-item">
                     <a class="nav-link" data-href="{{URL::secure('intro')}}" onclick="Load_with_axios(this)" href="#intro">介绍</a>
+                </li> --}}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">推教處課程</a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                        <a class="nav-link" href="{{ route('intro')}}">關於RTC</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-href="{{URL::secure('teacher')}}" onclick="Load_with_axios(this)" href="#teacher">教學團隊</a>
@@ -83,8 +89,11 @@
                 <li class="nav-item">
                     <a class="nav-link" data-href="{{URL::secure('contact')}}" onclick="Load_with_axios(this)" href="#contact">聯絡辦公室</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('lesson.index')}}">推廣處課程</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">推教處課程</a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                        <a class="nav-link" href="{{ route('lesson.index')}}">Apple系列課程</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://www.facebook.com/FCURTC/" onclick="window.open(this.href);return false;">Facebook粉絲專頁</a>

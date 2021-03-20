@@ -75,9 +75,9 @@
                     <a class="nav-link" data-href="{{URL::secure('intro')}}" onclick="Load_with_axios(this)" href="#intro">介绍</a>
                 </li> --}}
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">推教處課程</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">介紹</a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                        <a class="nav-link" href="{{ route('intro')}}">關於RTC</a>
+                        <a class="dropdown-item" href="{{ route('intro')}}">關於RTC</a> 
                     </div>
                 </li>
                 <li class="nav-item">

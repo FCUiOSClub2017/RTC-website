@@ -71,7 +71,7 @@
           <b-col>
             <b-img src="/img/teacher_3.png" fluid alt="Fluid image" class="mb-2"></b-img>
             <h5>
-              林春煌 老師
+              Handy 老師
             </h5>
           </b-col>
           <b-col>

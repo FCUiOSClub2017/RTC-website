@@ -92,7 +92,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">推教處課程</a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                        <a class="nav-link" href="{{ route('lesson.index')}}">Apple系列課程</a>
+                        <a class="dropdown-item" href="{{ route('lesson.index')}}">Apple系列課程</a> 
                     </div>
                 </li>
                 <li class="nav-item">

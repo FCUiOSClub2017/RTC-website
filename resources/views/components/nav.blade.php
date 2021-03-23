@@ -75,7 +75,7 @@
                     <a class="nav-link" data-href="{{URL::secure('intro')}}" onclick="Load_with_axios(this)" href="#intro">介绍</a>
                 </li> --}}
                 <li class="nav-item">
-                    <a class="nav-link" onclick="Load_with_axios(this)" href="{{ route('intro')}}">關於RTC</a>
+                    <a class="nav-link" data-href="{{URL::secure('intro')}}" href="{{ route('intro')}}">關於RTC</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-href="{{URL::secure('teacher')}}" onclick="Load_with_axios(this)" href="#teacher">教學團隊</a>
@@ -87,7 +87,7 @@
                     <a class="nav-link" data-href="{{URL::secure('contact')}}" onclick="Load_with_axios(this)" href="#contact">聯絡辦公室</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" onclick="Load_with_axios(this)" href="{{ route('lesson.index')}}">Apple系列課程</a>
+                    <a class="nav-link" href="{{ route('lesson.index')}}">Apple系列課程</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://www.facebook.com/FCURTC/" onclick="window.open(this.href);return false;">Facebook粉絲專頁</a>

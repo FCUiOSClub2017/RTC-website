@@ -74,11 +74,8 @@
                 {{-- <li class="nav-item">
                     <a class="nav-link" data-href="{{URL::secure('intro')}}" onclick="Load_with_axios(this)" href="#intro">介绍</a>
                 </li> --}}
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">介紹</a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                        <a class="dropdown-item" href="{{ route('intro')}}">關於RTC</a> 
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="Load_with_axios(this)" href="{{ route('intro')}}">關於RTC</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-href="{{URL::secure('teacher')}}" onclick="Load_with_axios(this)" href="#teacher">教學團隊</a>
@@ -89,11 +86,8 @@
                 <li class="nav-item">
                     <a class="nav-link" data-href="{{URL::secure('contact')}}" onclick="Load_with_axios(this)" href="#contact">聯絡辦公室</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">推教處課程</a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                        <a class="dropdown-item" href="{{ route('lesson.index')}}">Apple系列課程</a> 
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="Load_with_axios(this)" href="{{ route('lesson.index')}}">Apple系列課程</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://www.facebook.com/FCURTC/" onclick="window.open(this.href);return false;">Facebook粉絲專頁</a>

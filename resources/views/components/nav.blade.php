@@ -62,6 +62,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">移動應用創新賽</a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                        <a class="dropdown-item" href="https://rtc-2021.fcu.edu.tw">2021 移動應用創新賽</a>
                         <a class="dropdown-item" href="https://rtc-2020.fcu.edu.tw">2020 移動應用創新賽</a> 
                         <a class="dropdown-item" href="https://rtc-2019.fcu.edu.tw">2019 移動應用創新賽</a> 
                         <a class="dropdown-item" href="https://rtc-2018.fcu.edu.tw">2018 移動應用創新賽</a>

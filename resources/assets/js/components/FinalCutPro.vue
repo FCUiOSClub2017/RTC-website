@@ -43,22 +43,6 @@
 							</b-col>
 						</b-row>
 						<b-row class="item" align-v="center">
-							<b-col cols="auto"><span class="title">上課期間</span></b-col>
-							<b-col>
-								<div class="aaa">
-									5/15、5/16、5/22、5/23
-								</div>
-							</b-col>
-						</b-row>
-						<b-row class="item" align-v="center">
-							<b-col cols="auto"><span class="title">上課時段</span></b-col>
-							<b-col>
-								<div class="aaa">
-									09:30-12:30，14:00-17:00
-								</div>
-							</b-col>
-						</b-row>
-						<b-row class="item" align-v="center">
 							<b-col cols="auto"><span class="title">總時數</span></b-col>
 							<b-col>
 								<div class="aaa">
@@ -130,7 +114,7 @@
 			<b-container>
 				<h2 class="areaTitle mb-4">課程大綱</h2>
 				<b-tabs content-class="mt-3" justified>
-					<b-tab title="5/22（六）" active>
+					<b-tab title="第一天" active>
 						<b-table responsive dark striped hover :items="items_515" :fields="fields" class="course">
 							<template #cell(theme)="data" >
 								<div class='text-center'>
@@ -142,7 +126,7 @@
 							</template>
 						</b-table>
 					</b-tab>
-					<b-tab title="5/23（日）">
+					<b-tab title="第二天">
 						<b-table responsive dark striped hover :items="items_526" :fields="fields" class="course">
 							<template #cell(theme)="data" >
 								<div class='text-center'>
@@ -154,7 +138,7 @@
 							</template>
 						</b-table>
 					</b-tab>
-					<b-tab title="5/29（六）">
+					<b-tab title="第三天">
 						<b-table responsive dark striped hover :items="items_522" :fields="fields" class="course">
 							<template #cell(theme)="data" >
 								<div class='text-center'>
@@ -166,7 +150,7 @@
 							</template>
 						</b-table>
 					</b-tab>
-					<b-tab title="5/30（日）">
+					<b-tab title="第四天">
 						<b-table responsive dark striped hover :items="items_523" :fields="fields" class="course">
 							<template #cell(theme)="data" >
 								<div class='text-center'>

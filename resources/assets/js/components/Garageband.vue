@@ -42,22 +42,6 @@
 							</b-col>
 						</b-row>
 						<b-row class="item" align-v="center">
-							<b-col cols="auto"><span class="title">上課期間</span></b-col>
-							<b-col>
-								<div class="aaa">
-									5/10、5/12、5/17、5/19
-								</div>
-							</b-col>
-						</b-row>
-						<b-row class="item" align-v="center">
-							<b-col cols="auto"><span class="title">上課時段</span></b-col>
-							<b-col>
-								<div class="aaa">
-									每週一、每周三 19:00 ~ 22:00
-								</div>
-							</b-col>
-						</b-row>
-						<b-row class="item" align-v="center">
 							<b-col cols="auto"><span class="title">總時數</span></b-col>
 							<b-col>
 								<div class="aaa">
@@ -157,14 +141,14 @@
 				fields: [
 					{
 						key: 'EchelonTwo',
-						label: '日期',
+						label: '時程',
 						tdClass: "echelon"
 					},
-					{
-						key: 'week',
-						label: '星期',
-						tdClass: "week"
-					},
+					// {
+					// 	key: 'week',
+					// 	label: '星期',
+					// 	tdClass: "week"
+					// },
 					{
 						key: 'timePeriod',
 						label: '時數',
@@ -178,29 +162,29 @@
 				],
 				items_515: [{
 						EchelonOne: "3/15",
-						EchelonTwo: "5/10",
-						week:"一",
+						EchelonTwo: "第一天",
+						// week:"一",
 						timePeriod: "3",
 						Description: '<ul><li>認識你的音樂製作軟體 Garageband：認識數位音樂及其製作環境</li><li>Garageband 基本操作介面：偏好設定及工作區域認識</li><li>音軌概念與認識</li><li>Apple Loops 使用與編輯方法</li><li>Drummer 認識與應用</li><li>實戰操作</li></ul>'
 					},
 					{
 						EchelonOne: "3/17",
-						EchelonTwo: "5/12",
-						week:"三",
+						EchelonTwo: "第二天",
+						// week:"三",
 						timePeriod: "3",
 						Description: '<ul><li>透過 Garageband 進行音樂創作及編曲：認識內建音色，建立自己的音色庫：Patch、Smart Control</li><li>Midi 音軌錄製與編輯</li><li>編曲創作的基本元素</li><li>歌曲示範演練</li><li>實戰操作</li></ul>'
 					},
 					{
 						EchelonOne: "3/22",
-						EchelonTwo: "5/17",
-						week:"一",
+						EchelonTwo: "第三天",
+						// week:"一",
 						timePeriod: "3",
 						Description: '<ul><li>透過 Garageband 錄製與剪輯原聲素材以木吉他與 Vocal 之編制為例</li><li>錄音環境建置</li><li>Audio 錄製設定與編輯</li><li>歌曲示範演練</li><li>實戰操作</li></ul>'
 					},
 					{
 						EchelonOne: "3/24",
-						EchelonTwo: "5/19",
-						week:"三",
+						EchelonTwo: "第四天",
+						// week:"三",
 						timePeriod: "3",
 						Description: '<ul><li>簡單混音-完成歌曲：器樂平衡、內建效果器與基本操作</li><li>存檔與輸出</li><li>實戰操作</li></ul>'
 					}

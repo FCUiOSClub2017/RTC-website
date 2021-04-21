@@ -39,23 +39,6 @@
 									逢甲大學RTC教室
 								</div>
 							</b-col>
-						</b-row>
-						<b-row class="item" align-v="center">
-							<b-col cols="auto"><span class="title">上課期間</span></b-col>
-							<b-col>
-								<div class="aaa">
-									5/8、5/9、5/15、5/16
-								</div>
-							</b-col>
-						</b-row>
-						<b-row class="item" align-v="center">
-							<b-col cols="auto"><span class="title">上課時段</span></b-col>
-							<b-col>
-								<div class="aaa">
-									09:30-12:30，14:00-17:00
-								</div>
-							</b-col>
-						</b-row>
 						<b-row class="item" align-v="center">
 							<b-col cols="auto"><span class="title">總時數</span></b-col>
 							<b-col>
@@ -156,14 +139,14 @@
 				fields: [
 					{
 						key: 'theme',
-						label: '課程主題',
+						label: '時程',
 						tdClass: "echelon"
 					},
-					{
-						key: 'week',
-						label: '星期',
-						tdClass: "week"
-					},
+					// {
+					// 	key: 'week',
+					// 	label: '星期',
+					// 	tdClass: "week"
+					// },
 					{
 						key: 'timePeriod',
 						label: '時數',
@@ -175,50 +158,50 @@
 					}
 				],
 				items_515: [{
-						theme: '5／8 ',
-						week:"星期六",
+						theme: '第一天',
+						// week:"星期六",
 						timePeriod: "09:30-12:30",
 						Description: '1.認識你的音樂製作軟體 Logic Pro：<ul class="mb-0"><li>認識數位音樂及其製作環境</li><li>Logic Pro 基本操作介面：偏好設定及工作區域認識</li><li>音軌概念與認識</li><li>Apple Loops 使用與編輯方法</li><li>Drummer 認識與應用</li></ul>'
 					},
 					{
-						theme: '5／8',
-						week:"星期六",
+						theme: '第一天',
+						// week:"星期六",
 						timePeriod: "14:00-17:00",
 						Description: '2.透過 Logic Pro 建置歌曲基本架構：<ul><li>認識內建音色及其角色</li><li>Midi 音軌錄製與編輯</li><li>編曲創作的基本元素:基礎樂理與創作概述</li><li>常見旋律型、節奏組樂器的編排方法</li><li>氛圍型音色選用及疊用的方法</li></ul>'
 					},
 					{
-						theme: '5／9',
-						week:"星期日",
+						theme: '第二天',
+						// week:"星期日",
 						timePeriod: "09:30-12:30",
 						Description: '3.透過 Logic Pro 錄製與剪輯原聲素材：錄音環境建置<ul><li>Audio 錄製設定</li><li>udio 音軌編輯方法</li><li>Auto Punch、Flex Time、Flex Pitch</li><li>不同的錄音模式</li><li>其他常見錄製與編輯技巧</li></ul>'
 					},
 					{
-						theme: '5／9',
-						week:"星期日",
+						theme: '第二天',
+						// week:"星期日",
 						timePeriod: "14:00-17:00",
 						Description: '4.編曲與 Logic Pro 進階工具認識：<ul><li>重點內建 Midi Plug-in 的認識 (Ex.Appregiator) </li><li>重點內建音源插件操作 (Ex.Retro Synth)</li><li>外部插件使用</li></ul>'
 					},
 					{
-						theme: '5／15 ',
-						week:"星期六",
+						theme: '第三天',
+						// week:"星期六",
 						timePeriod: "09:30-12:30",
 						Description:"5.基本混音 Rough Mix 讓歌曲聽起來更完整：<ol><li>「混音」基本概念</li><li>音量平衡與相位配置</li><li>內建效果器基本操作</li><li>Automation</li><li>存檔與輸出</li></ol>"
 					},
 					{
-						theme: '5／15',
-						week:"星期六",
+						theme: '第三天',
+						// week:"星期六",
 						timePeriod: "14:00-17:00",
 						Description:"6.Logic Pro 10.5 Live Loops 功能認識與現場演出：<ol><li>Live Loops 認識</li><li>素材建立</li><li>外部器材連結操作</li></ol>"
 					},
 					{
-						theme: '5／16',
-						week:"星期日",
+						theme: '第四天',
+						// week:"星期日",
 						timePeriod: "09:30-12:30",
 						Description:"7.從無到有-創作與編曲實際演練示範：<ul><li>創作基本概論與方法:旋律、歌詞創作工具</li><li>編曲與宅錄實際進行</li></ul>"
 					},
 					{
-						theme: '5／16',
-						week:"星期日",
+						theme: '第四天',
+						// week:"星期日",
 						timePeriod: "14:00-17:00",
 						Description:"8.實戰導引與交流：<ul><li>學員作品創作與編寫</li><li>提問與交流</li></ul>"
 					}

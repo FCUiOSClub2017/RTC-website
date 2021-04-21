@@ -43,22 +43,6 @@
 							</b-col>
 						</b-row>
 						<b-row class="item" align-v="center">
-							<b-col cols="auto"><span class="title">上課期間</span></b-col>
-							<b-col>
-								<div class="aaa">
-									5/24、5/26、5/31、6/2
-								</div>
-							</b-col>
-						</b-row>
-						<b-row class="item" align-v="center">
-							<b-col cols="auto"><span class="title">上課時段</span></b-col>
-							<b-col>
-								<div class="aaa">
-									每週一、每周三 19:00 ~ 22:00
-								</div>
-							</b-col>
-						</b-row>
-						<b-row class="item" align-v="center">
 							<b-col cols="auto"><span class="title">總時數</span></b-col>
 							<b-col>
 								<div class="aaa">
@@ -148,14 +132,14 @@
 				fields: [
 					{
 						key: 'EchelonTwo',
-						label: '日期',
+						label: '時程',
 						tdClass: "echelon"
 					},
-					{
-						key: 'week',
-						label: '星期',
-						tdClass: "week"
-					},
+					// {
+					// 	key: 'week',
+					// 	label: '星期',
+					// 	tdClass: "week"
+					// },
 					{
 						key: 'timePeriod',
 						label: '時數',
@@ -168,29 +152,29 @@
 				],
 				items_515: [{
 						EchelonOne:"3/15",
-						EchelonTwo:"5/10",
-						week:"一",
+						EchelonTwo:"第一天",
+						// week:"一",
 						timePeriod: "3",
 						Description: '<strong>掌握簡單原則，拍出好畫面：</strong><ol><li>構圖、運鏡基本技巧</li><li>分鏡表、文字腳本製作方法</li><li>影片、圖片、音樂素材庫使用介紹</li></ol>'
 					},
 					{
 						EchelonOne:"3/17",
-						EchelonTwo:"5/12",
-						week:"三",
+						EchelonTwo:"第二天",
+						// week:"三",
 						timePeriod: "3",
 						Description: '<strong>基礎功能操作，聲音資訊處理：</strong><ol start="4"><li>基礎功能操作 / Library、Event、 Project、解析度、FPS / 變形工具 / 速度調整工具 / 影片後期穩定器</li><li>新增字幕 / 字體樣式設定 / 建立常用字幕預設集</li><li>音效使用 / 配樂銜接 / 配樂基本技巧</li></ol>'
 					},
 					{
 						EchelonOne:"3/22",
-						EchelonTwo:"5/17",
-						week:"一",
+						EchelonTwo:"第三天",
+						// week:"一",
 						timePeriod: "3",
 						Description: '<strong>調色 / 轉場 / 特效</strong><ol start="7"><li>基礎調色操作 / 建立常用色調預設集 / LUT使用</li><li>基礎應用 / 長度調整 / 新增外掛方法 / 好用推薦</li><li>基礎應用 / 複製貼上屬性 / 新增外掛方法 / 好用推薦 建立代理文件 / Rendering Files設定 / 外接硬碟 / 剪輯設備 編碼形式 / 封裝格式</li></ol>'
 					},
 					{
 						EchelonOne:"3/24",
-						EchelonTwo:"5/19",
-						week:"三",
+						EchelonTwo:"第四天",
+						// week:"三",
 						timePeriod: "3",
 						Description: '<ol start="10"><li>實戰操作</li></ol>'
 					}

@@ -39,6 +39,7 @@
 									逢甲大學RTC教室
 								</div>
 							</b-col>
+						</b-row>
 						<b-row class="item" align-v="center">
 							<b-col cols="auto"><span class="title">總時數</span></b-col>
 							<b-col>

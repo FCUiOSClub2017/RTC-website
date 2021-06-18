@@ -20,7 +20,7 @@
                 <div class="footer-col col-md-4">
                     <h3>辦公室聯絡</h3>
                     <a><i class="fa fa-fw fa-envelope-o"></i> rtc@mail.fcu.edu.tw
-                        <br><i class="fa fa-fw fa-mobile"></i> 逢甲大學推廣教育處 04-24517250 轉 3705
+                        <br><i class="fa fa-fw fa-mobile"></i> 逢甲大學推廣教育處 04-24517250 轉 2411
                         <br><i class="fa fa-fw fa-map-marker"></i> 台中市西屯區文華路100號 行政2館1樓
                     </a>
                 </div>
